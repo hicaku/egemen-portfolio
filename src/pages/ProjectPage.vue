@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
-import { projects } from "@/stores/index";
+import { projects, smallProjects } from "@/stores/index";
 
 const route = useRoute();
 const { projectName } = route.params as any;
-const project = projects.find((project) => project.url === projectName);
+let project = projects.find((project) => project.url === projectName);
+if (!project) {
+    project = smallProjects.find((project) => project.url === projectName);
+}
 </script>
 <template>
     <div class="pb-10">
@@ -43,6 +46,52 @@ const project = projects.find((project) => project.url === projectName);
                     class="mt-4 w-full h-96 rounded-lg"
                 ></iframe>
             </div>
+            <div class="mt-8" v-if="project?.gameplay">
+                <h3 class="text-2xl flex items-end text-yellow-500">
+                    Gameplay
+                </h3>
+                <div class="mt-4">
+                    <ul
+                        v-for="(gameplay, key) in project.gameplay"
+                        :key="key"
+                        class="my-2"
+                    >
+                        <li class="text-xl font-bold mt-4">
+                            {{ gameplay }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8" v-if="project?.rules">
+                <h3 class="text-2xl flex items-end text-yellow-500">Rules</h3>
+                <div class="mt-4">
+                    <ul
+                        v-for="(rule, key) in project?.rules"
+                        :key="key"
+                        class="my-2"
+                    >
+                        <li class="text-xl font-bold mt-4">
+                            {{ rule }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8" v-if="project?.controls">
+                <h3 class="text-2xl flex items-end text-yellow-500">
+                    Controls
+                </h3>
+                <div class="mt-4">
+                    <ul
+                        v-for="(control, key) in project?.controls"
+                        :key="key"
+                        class="my-2"
+                    >
+                        <li class="text-xl font-bold mt-4">
+                            {{ control }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="mt-8">
                 <h3 class="text-2xl flex items-end text-yellow-500">Details</h3>
                 <div class="mt-4">
@@ -53,13 +102,13 @@ const project = projects.find((project) => project.url === projectName);
                     >
                         <span class="text-xl font-extrabold mt-4"
                             ><font-awesome-icon
-                                :icon="detail.icon"
+                                :icon="detail?.icon"
                                 class="mr-2 text-yellow-500"
                             ></font-awesome-icon
-                            >{{ detail.title }}:</span
+                            >{{ detail?.title }}:</span
                         >
                         <span class="text-xl mt-4 ml-2">
-                            {{ detail.value }}</span
+                            {{ detail?.value }}</span
                         >
                     </div>
                 </div>

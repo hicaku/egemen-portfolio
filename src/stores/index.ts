@@ -6,11 +6,9 @@ export const projects = [
         url: "hear-me-not",
         name: "Hear Me Not",
         shortDescription:
-            "Work in progress indie game student project. I've been working as a Lead Developer with a team of more than 10 people",
+            "Work in progress indie game student project. I've been working as a Lead Developer with a team of more than 10 people.",
         description:
-            "This is a indie game student project I made with a team of more than 10 people. I've been working as a Lead Developer. Except for the Enemy AI, basically, I programmed the game all by myself. We created a playable demo in 3 months and presented it at school.",
-            "Sometimes, I created systems from the ground up, such as the Rail Camera System. Other times, I followed tutorials and made significant modifications to existing code to align with our game's design requirements. Developing a relatively ambitious game independently, starting from scratch, necessitated solving countless problems and delving into topics that were unfamiliar to me, such as Save/Load and Checkpoint systems. I believe that I gained a lot of experience from this project.",
-            "I will write here a detailed explanation about mechanics as soon as possible. Please watch the video for now.",
+            "This is a indie game student project I made with a team of more than 10 people. I've been working as a Lead Developer. Except for the Enemy AI, basically, I programmed the game all by myself. We created a playable demo in 3 months and presented it at school. Sometimes, I created systems from the ground up, such as the Rail Camera System. Other times, I followed tutorials and made significant modifications to existing code to align with our game's design requirements. Developing a relatively ambitious game independently, starting from scratch, necessitated solving countless problems and delving into topics that were unfamiliar to me, such as Save/Load and Checkpoint systems. I believe that I gained a lot of experience from this project. I will write here a detailed explanation about mechanics as soon as possible. Please watch the video for now.",
         image: "images/game.gif",
         details: {
             developmentTime: {
@@ -45,7 +43,7 @@ export const projects = [
             },
         },
         techStack: ["Unreal Engine", "Blueprints"],
-        youtube: "https://youtu.be/ZLqHHJ_eFfs",
+        youtube: "https://www.youtube.com/embed/ZLqHHJ_eFfs",
     },
     {
         id: 2,
@@ -59,14 +57,14 @@ export const projects = [
             "You are allowed to control only one character per turn and have to decide whether to move to a location or attack the enemy, if they are already in range.",
             "You must choose between 2 types of attack. The strategy is to decide where you want to attack, to the opponent's Strength or Armor. STR attacks weaken the enemy and reduce their attack output permanently, whereas, Break Armor attacks greatly increase your damage to them in future turns. Choose wisely.",
             "The team with the last man standing wins.",
-            ],
+        ],
         features: [
             "Multiplayer Turn-Based System",
             "3 different character classes with their own stats (STR, ARM, attack range)",
             "More character classes and their stats can be added easily in the editor",
             "2 types of attack options (Strength and Break Attack). All damage logic is coded as in the original game",
             "The grid structure is not functional at the moment. Grid and limited movement system which is similar to the original game are planned for a future version",
-            ],
+        ],
         image: "images/game.gif",
         details: {
             developmentTime: {
@@ -96,25 +94,20 @@ export const projects = [
             },
         },
         techStack: ["Unreal Engine", "Blueprints"],
-        youtube: "https://youtu.be/pUnargOeXvk",
+        youtube: "https://www.youtube.com/embed/pUnargOeXvk",
     },
     {
         id: 3,
         url: "vampire-game",
         name: "Vampire Game",
-        shortDescription:
-            "Made in 72 hours for a Game Jam",
+        shortDescription: "Made in 72 hours for a Game Jam",
         description:
-            "Made in 72 hours for Frostjam 23' Game Jam. Download link: https://egemen-ton.itch.io/natural-born-tendencies",
+            "Made in 72 hours for Frostjam 23' Game Jam. You can visit my itch.io page for more details.",
         gameplay: [
             "You are a vampire who fell asleep at night instead of hunting. You need to hunt a certain amount of people to get fed and must go to the safe zone before your health runs out. Sun is rising and damaging you more as time passes. You need to be quick. Avoid light sources and stay in the dark.",
-            "Be careful. You are allergic to some blood types. You should only kill the people who have the correct blood type. Otherwise, you lose your health. Don't worry. Your instincts will guide you."
-            ],
-        controls: [
-            "WASD - Movement",
-            "F - Attack from behind",
-            "H - Heal"
-            ],
+            "Be careful. You are allergic to some blood types. You should only kill the people who have the correct blood type. Otherwise, you lose your health. Don't worry. Your instincts will guide you.",
+        ],
+        controls: ["WASD - Movement", "F - Attack from behind", "H - Heal"],
         image: "images/game.gif",
         details: {
             developmentTime: {
@@ -149,7 +142,7 @@ export const projects = [
             },
         },
         techStack: ["Unreal Engine", "Blueprints"],
-        youtube: "https://youtu.be/FY1r324S1EU",
+        youtube: "https://www.youtube.com/embed/FY1r324S1EU",
     },
     {
         id: 4,
@@ -157,8 +150,7 @@ export const projects = [
         name: "The Ultimate Shooter",
         shortDescription:
             "Result of the 56 hours long Udemy class: Unreal Engine C++ The Ultimate Shooter Course",
-        description:
-            "Topics covered are:    ",
+        description: "Topics covered are:    ",
         topics: [
             "-Character creation and movement",
             "-Input for PC and console controllers",
@@ -184,46 +176,41 @@ export const projects = [
             "-Move different gun parts (the clip/magazine, and pistol slide) during animations",
             "-Camera zoom while aiming",
             "-Dynamic crosshairs that spread in reaction to:",
-                [ "-Character speed",
-                "-Weapon fire",
-                "-Aiming",
-                "-Jumping"
-                ],
+            ["-Character speed", "-Weapon fire", "-Aiming", "-Jumping"],
             "-Different crosshairs per weapon",
             "-Widget components, showing:",
-                [ "-Item names",
-                "-Item types",
-                "-Ammo counts",
-                "-Item rarity"
-                ],
+            ["-Item names", "-Item types", "-Ammo counts", "-Item rarity"],
             "-HUD animations",
             "-Full item inventory system",
             "-Data tables, in Blueprints and C++",
             "-Curves to control:",
-                [ "-Item movement during pickup",
-                "-Color and brightness pulse for material effects"
-                ],
+            [
+                "-Item movement during pickup",
+                "-Color and brightness pulse for material effects",
+            ],
             "-Material creation, including:",
-                ["-Post-process materials",
+            [
+                "-Post-process materials",
                 "-Dynamic material instances",
                 "-Setting material properties from C++",
                 "-Driving material properties with curves",
                 "-Material functions",
                 "-Blending materials together",
                 "-Outline effects",
-                "-Glow/pulse effects"
-                ],
+                "-Glow/pulse effects",
+            ],
             "-Retargeting animations",
             "-Retargeting whole Animation Blueprints",
             "-Numerous gameplay algorithms",
             "-Use of data structures, including:",
-                ["-Post-process materials",
+            [
+                "-Post-process materials",
                 "-structs",
                 "-enums",
                 "-arrays",
                 "-maps",
-                "-and more"
-                ],
+                "-and more",
+            ],
             "-Animation montages",
             "-Anim Notifies for sounds, weapon trails, and custom notifies",
             "-Sync markers for footsteps and sync groups",
@@ -237,10 +224,11 @@ export const projects = [
             "-Behavior Trees and Blackboard Components",
             "-Multiple enemy types with varying levels of Health, Damage, Size and Movement Speed",
             "-Headshot damage, with:",
-                ["-Higher damage for headshots",
+            [
+                "-Higher damage for headshots",
                 "-Number widgets that pop up and animate with bullet hits",
                 "-Different colored numbers for headshots",
-                ],
+            ],
             "-Character and enemy health bars",
             "-Enemy patrol, agro, chase and attack player",
             "Death mechanics",
@@ -250,8 +238,8 @@ export const projects = [
             "-Level prototyping",
             "-Creating full levels based on our prototypes using professional assets",
             "-Light baking",
-            "-Post-process effects"
-        ]
+            "-Post-process effects",
+        ],
         image: "images/game.gif",
         details: {
             developmentTime: {
@@ -281,7 +269,7 @@ export const projects = [
             },
         },
         techStack: ["Unreal Engine", "C++"],
-        youtube: "https://youtu.be/8u8ScEuO-qU",
+        youtube: "https://www.youtube.com/embed/8u8ScEuO-qU",
     },
     {
         id: 5,
@@ -319,8 +307,13 @@ export const projects = [
                 value: "C++ and Blueprints",
             },
         },
-        techStack: ["Unreal Engine", "C++", "Blueprints", "Gameplay Ability System (GAS)"],
-        youtube: "https://youtu.be/lUhbEqJktOc",
+        techStack: [
+            "Unreal Engine",
+            "C++",
+            "Blueprints",
+            "Gameplay Ability System (GAS)",
+        ],
+        youtube: "https://www.youtube.com/embed/lUhbEqJktOc",
     },
 ];
 
@@ -362,7 +355,7 @@ export const smallProjects = [
             },
         },
         techStack: ["Unreal Engine", "C++"],
-        youtube: "https://youtu.be/urb-1d2YoNk",
+        youtube: "https://www.youtube.com/embed/urb-1d2YoNk",
     },
     {
         id: 2,
@@ -401,7 +394,7 @@ export const smallProjects = [
             },
         },
         techStack: ["Unreal Engine", "C++"],
-        youtube: "https://youtu.be/fYGTDOQBFm0",
+        youtube: "https://www.youtube.com/embed/fYGTDOQBFm0",
     },
     {
         id: 3,
@@ -440,7 +433,7 @@ export const smallProjects = [
             },
         },
         techStack: ["Unreal Engine", "C++"],
-        youtube: "https://youtu.be/IrpIh5CjNDc",
+        youtube: "https://www.youtube.com/embed/IrpIh5CjNDc",
     },
 ];
 
@@ -451,7 +444,7 @@ export const skills = [
     "Game Development",
     "Gameplay Programming",
     "Gameplay Ability System (GAS)",
-    "Git"
+    "Git",
 ];
 
 export const games = [
