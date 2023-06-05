@@ -46,17 +46,46 @@ if (!project) {
                     class="mt-4 w-full h-96 rounded-lg"
                 ></iframe>
             </div>
+            <div class="mt-8" v-if="project?.topics">
+                <h3 class="text-2xl flex items-end text-yellow-500">Topics</h3>
+                <div class="mt-4">
+                    <ul
+                        v-for="(topic, key) in project?.topics"
+                        :key="key"
+                        class="my-2 list-disc list-inside"
+                    >
+                        <div></div>
+                        <li
+                            class="text-xl font-bold mt-4"
+                            v-if="typeof topic === 'string'"
+                        >
+                            {{ topic }}
+                        </li>
+                        <div v-else-if="typeof topic === 'object'">
+                            <li
+                                v-for="(subTopic, key) in topic"
+                                :key="key"
+                                class="ml-10 my-2"
+                            >
+                                <span class="text-xl font-bold mt-4">{{
+                                    subTopic
+                                }}</span>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
             <div class="mt-8" v-if="project?.gameplay">
                 <h3 class="text-2xl flex items-end text-yellow-500">
                     Gameplay
                 </h3>
                 <div class="mt-4">
-                    <ul
-                        v-for="(gameplay, key) in project.gameplay"
-                        :key="key"
-                        class="my-2"
-                    >
-                        <li class="text-xl font-bold mt-4">
+                    <ul class="my-2">
+                        <li
+                            class="text-xl font-bold mt-4"
+                            v-for="(gameplay, key) in project.gameplay"
+                            :key="key"
+                        >
                             {{ gameplay }}
                         </li>
                     </ul>
@@ -65,12 +94,12 @@ if (!project) {
             <div class="mt-8" v-if="project?.rules">
                 <h3 class="text-2xl flex items-end text-yellow-500">Rules</h3>
                 <div class="mt-4">
-                    <ul
-                        v-for="(rule, key) in project?.rules"
-                        :key="key"
-                        class="my-2"
-                    >
-                        <li class="text-xl font-bold mt-4">
+                    <ul class="my-2">
+                        <li
+                            class="text-xl mt-4"
+                            v-for="(rule, key) in project?.rules"
+                            :key="key"
+                        >
                             {{ rule }}
                         </li>
                     </ul>
@@ -81,12 +110,12 @@ if (!project) {
                     Controls
                 </h3>
                 <div class="mt-4">
-                    <ul
-                        v-for="(control, key) in project?.controls"
-                        :key="key"
-                        class="my-2"
-                    >
-                        <li class="text-xl font-bold mt-4">
+                    <ul class="my-2">
+                        <li
+                            class="text-xl font-bold mt-4"
+                            v-for="(control, key) in project?.controls"
+                            :key="key"
+                        >
                             {{ control }}
                         </li>
                     </ul>

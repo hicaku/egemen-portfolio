@@ -3,9 +3,11 @@ import ContactMe from "@/components/ContactMe.vue";
 import FeaturedProjects from "@/components/FeaturedProjects.vue";
 import SmallProjects from "@/components/SmallProjects.vue";
 
-const downloadCV = () => {
-    console.log("Coming soon!");
-};
+import { useIndexStore } from "@/stores/index";
+
+const store = useIndexStore();
+
+const { downloadCV } = store;
 </script>
 
 <template>
@@ -50,7 +52,7 @@ const downloadCV = () => {
                 </div>
             </div>
             <img
-                src="images/egemen.jpg"
+                src="/images/egemen.jpg"
                 alt="Egemen"
                 class="landing-image h-full w-96 mx-auto sm:mx-0"
             />
@@ -58,7 +60,8 @@ const downloadCV = () => {
         <blockquote class="text-2xl italic text-center">
             I'm a game developer with a special interest in gameplay systems. I
             love transforming an abstract gameplay idea into a concrete system
-            that the player can interact with. Programming new systems and seeing them work is the best!
+            that the player can interact with. Programming new systems and
+            seeing them work is the best!
         </blockquote>
         <FeaturedProjects class="pt-10" id="featuredProjects" />
         <SmallProjects class="pt-10" />
