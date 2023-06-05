@@ -8,7 +8,9 @@ export const projects = [
         shortDescription:
             "Work in progress indie game student project. I've been working as a Lead Developer with a team of more than 10 people.",
         description:
-            "This is a indie game student project I made with a team of more than 10 people. I've been working as a Lead Developer. Except for the Enemy AI, basically, I programmed the game all by myself. We created a playable demo in 3 months and presented it at school. Sometimes, I created systems from the ground up, such as the Rail Camera System. Other times, I followed tutorials and made significant modifications to existing code to align with our game's design requirements. Developing a relatively ambitious game independently, starting from scratch, necessitated solving countless problems and delving into topics that were unfamiliar to me, such as Save/Load and Checkpoint systems. I believe that I gained a lot of experience from this project. I will write here a detailed explanation about mechanics as soon as possible. Please watch the video for now.",
+            "This is an indie game student project I made with a team of more than 10 people. I've been working as a Lead Developer. Except for the Enemy AI, basically, I programmed the game all by myself. We created a playable demo in 3 months and presented it at school.", 
+            "Sometimes, I created systems from the ground up, such as the Rail Camera System. Other times, I followed tutorials and made significant modifications to existing code to align with our game's design requirements. Developing a relatively ambitious game independently, starting from scratch, necessitated solving countless problems and delving into topics that were unfamiliar to me, such as Save/Load and Checkpoint systems. I believe that I gained a lot of experience from this project.",
+            "I will write here a detailed explanation about mechanics as soon as possible. Please watch the video for now.",
         image: "images/gifs/Hear_Me_Not.gif",
         details: {
             developmentTime: {
@@ -50,9 +52,9 @@ export const projects = [
         url: "the-banner-saga",
         name: "The Banner Saga",
         shortDescription:
-            "In this project, I wanted to clone a game that I loved playing, The Banner Saga. This is a multiplayer turn-based tactical-combat game prototype.",
+            "I wanted to clone a game that I loved playing, The Banner Saga. This is a multiplayer turn-based tactical-combat game prototype.",
         description:
-            "In this project, I wanted to clone a game that I loved playing, The Banner Saga. This is a multiplayer turn-based tactical-combat game prototype, developed with Unreal Engine 5 (blueprints). More details: https://egemen-ton.itch.io/banner-saga-clone",
+            "In this project, I wanted to clone a game that I loved playing, The Banner Saga. This is a multiplayer turn-based tactical-combat game prototype, developed with Unreal Engine 5 (Blueprints). More details: https://egemen-ton.itch.io/banner-saga-clone",
         rules: [
             "You are allowed to control only one character per turn and have to decide whether to move to a location or attack the enemy, if they are already in range.",
             "You must choose between 2 types of attack. The strategy is to decide where you want to attack, to the opponent's Strength or Armor. STR attacks weaken the enemy and reduce their attack output permanently, whereas, Break Armor attacks greatly increase your damage to them in future turns. Choose wisely.",
@@ -102,7 +104,7 @@ export const projects = [
         name: "Vampire Game",
         shortDescription: "Made in 72 hours for a Game Jam",
         description:
-            "Made in 72 hours for Frostjam 23' Game Jam. You can visit my itch.io page for more details.",
+            "Made in 72 hours for Frostjam 23' Game Jam. Download link: https://egemen-ton.itch.io/natural-born-tendencies",
         gameplay: [
             "You are a vampire who fell asleep at night instead of hunting. You need to hunt a certain amount of people to get fed and must go to the safe zone before your health runs out. Sun is rising and damaging you more as time passes. You need to be quick. Avoid light sources and stay in the dark.",
             "Be careful. You are allergic to some blood types. You should only kill the people who have the correct blood type. Otherwise, you lose your health. Don't worry. Your instincts will guide you.",
@@ -150,7 +152,7 @@ export const projects = [
         name: "The Ultimate Shooter",
         shortDescription:
             "Result of the 56 hours long Udemy class: Unreal Engine C++ The Ultimate Shooter Course",
-        description: "Topics covered are listed below the video.",
+        description: "Result of the 56 hours long Udemy class: Unreal Engine C++ The Ultimate Shooter Course. Topics covered are listed below the video.",
         image: "images/gifs/The_Ultimate_Shooter.gif",
         topics: [
             "Character creation and movement",
@@ -279,7 +281,7 @@ export const projects = [
         shortDescription:
             "Earlier in my internship, I started learning Gameplay Ability System (GAS) and made this small project.",
         description:
-            "I set up the project in C++ and used blueprints to create abilities. Player can use 2 different Gameplay Abilities: Basic Attack and Igni. Normal Attack is self-explanatory, Igni costs mana and sets enemies on fire. All abilities, effects, pickups are working as a part of the GAS",
+            "I set up the project in C++ and used blueprints to create abilities. Player can use 2 different Gameplay Abilities: Basic Attack and Igni. Normal Attack is self-explanatory, Igni costs mana and sets enemies on fire. All abilities, effects, pickups are working as a part of the Gameplay Ability System.",
         image: "images/gifs/Gameplay_Ability_System.gif",
         details: {
             developmentTime: {
@@ -325,8 +327,21 @@ export const smallProjects = [
         name: "Simple Shooter",
         shortDescription:
             "Final project of the 30 hours long Udemy class: Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games",
-        description:
-            "Final project of the Udemy class: Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games. I wanted to develop this project further and additionally, I implemented:- Limited ammo system - Reloading - Pickable ammo from ground- Zooming in and out while aiming- Level start animation- Some sound effects. Almost everything is programmed in C++.",
+        description: 
+            "Final project of the 30 hours long Udemy class: Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games.",
+        
+        features: [
+            "I wanted to develop this project further and additionally, I implemented:",
+            [
+            "Limited ammo system",
+            "Reloading", 
+            "Pickable ammo from ground",
+            "Zooming in and out while aiming",
+            "Level start animation",
+            "Some sound effects."
+            ], 
+            "Almost everything is programmed in C++.",
+        ],
         image: "images/gifs/Simple_Shooter.gif",
         details: {
             developmentTime: {
@@ -365,7 +380,7 @@ export const smallProjects = [
         shortDescription:
             "Simple project with 1 month of experience in UE5. Part of the C++ Udemy class",
         description:
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "Simple project with 1 month of experience in UE5. Part of the C++ Udemy class",
         image: "images/gifs/Crypt_Raider.gif",
         details: {
             developmentTime: {
@@ -404,7 +419,7 @@ export const smallProjects = [
         shortDescription:
             "Really simple project with less than 1 month of experience in UE5. Part of the C++ Udemy class",
         description:
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "Really simple project with less than 1 month of experience in UE5. Part of the C++ Udemy class",
         image: "images/gifs/Obstacle_Assault.gif",
         details: {
             developmentTime: {
