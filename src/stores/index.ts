@@ -6,25 +6,27 @@ export const projects = [
         url: "hear-me-not",
         name: "Hear Me Not",
         shortDescription:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "Work in progress indie game student project. I've been working as a Lead Developer with a team of more than 10 people",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "This is a indie game student project I made with a team of more than 10 people. I've been working as a Lead Developer. Except for the Enemy AI, basically, I programmed the game all by myself. We created a playable demo in 3 months and presented it at school.",
+            "Sometimes, I created systems from the ground up, such as the Rail Camera System. Other times, I followed tutorials and made significant modifications to existing code to align with our game's design requirements. Developing a relatively ambitious game independently, starting from scratch, necessitated solving countless problems and delving into topics that were unfamiliar to me, such as Save/Load and Checkpoint systems. I believe that I gained a lot of experience from this project.",
+            "I will write here a detailed explanation about mechanics as soon as possible. Please watch the video for now.",
         image: "images/game.gif",
         details: {
             developmentTime: {
                 icon: "fa-solid fa-clock",
                 title: "Development Time",
-                value: "1 month",
+                value: "3+ months",
             },
             status: {
                 icon: "fa-solid fa-circle-info",
                 title: "Status",
-                value: "Released",
+                value: "Work in progress",
             },
             teamSize: {
                 icon: "fa-solid fa-people-group",
                 title: "Team Size",
-                value: "1",
+                value: "10+",
             },
             engine: {
                 icon: "fa-solid fa-server",
@@ -34,36 +36,48 @@ export const projects = [
             language: {
                 icon: "fa-solid fa-globe",
                 title: "Language",
-                value: "C++",
+                value: "Blueprints",
             },
             contributions: {
                 icon: "fa-solid fa-handshake-angle",
                 title: "Contributions",
-                value: "Player movement, head throwing (Projectile Motion) with preview line, and box pushing",
+                value: "All development except for the Enemy AI",
             },
         },
-        techStack: ["Unreal Engine", "C++", "Blueprints"],
-        youtube: "https://www.youtube.com/embed/pUnargOeXvk",
+        techStack: ["Unreal Engine", "Blueprints"],
+        youtube: "https://youtu.be/ZLqHHJ_eFfs",
     },
     {
         id: 2,
         url: "the-banner-saga",
         name: "The Banner Saga",
         shortDescription:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "In this project, I wanted to clone a game that I loved playing, The Banner Saga. This is a multiplayer turn-based tactical-combat game prototype.",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "In this project, I wanted to clone a game that I loved playing, The Banner Saga. This is a multiplayer turn-based tactical-combat game prototype, developed with Unreal Engine 5 (blueprints). More details: https://egemen-ton.itch.io/banner-saga-clone",
+        rules: [
+            "You are allowed to control only one character per turn and have to decide whether to move to a location or attack the enemy, if they are already in range.",
+            "You must choose between 2 types of attack. The strategy is to decide where you want to attack, to the opponent's Strength or Armor. STR attacks weaken the enemy and reduce their attack output permanently, whereas, Break Armor attacks greatly increase your damage to them in future turns. Choose wisely.",
+            "The team with the last man standing wins.",
+            ],
+        features: [
+            "Multiplayer Turn-Based System",
+            "3 different character classes with their own stats (STR, ARM, attack range)",
+            "More character classes and their stats can be added easily in the editor",
+            "2 types of attack options (Strength and Break Attack). All damage logic is coded as in the original game",
+            "The grid structure is not functional at the moment. Grid and limited movement system which is similar to the original game are planned for a future version",
+            ],
         image: "images/game.gif",
         details: {
             developmentTime: {
                 icon: "fa-solid fa-clock",
                 title: "Development Time",
-                value: "1 month",
+                value: "1.5 months",
             },
             status: {
                 icon: "fa-solid fa-circle-info",
                 title: "Status",
-                value: "Released",
+                value: "Completed",
             },
             teamSize: {
                 icon: "fa-solid fa-people-group",
@@ -78,41 +92,45 @@ export const projects = [
             language: {
                 icon: "fa-solid fa-globe",
                 title: "Language",
-                value: "C++",
-            },
-            contributions: {
-                icon: "fa-solid fa-handshake-angle",
-                title: "Contributions",
-                value: "Player movement, head throwing (Projectile Motion) with preview line, and box pushing",
+                value: "Blueprints",
             },
         },
-        techStack: ["Unreal Engine", "C++", "Blueprints"],
-        youtube: "https://www.youtube.com/embed/pUnargOeXvk",
+        techStack: ["Unreal Engine", "Blueprints"],
+        youtube: "https://youtu.be/pUnargOeXvk",
     },
     {
         id: 3,
         url: "vampire-game",
         name: "Vampire Game",
         shortDescription:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "Made in 72 hours for a Game Jam",
         description:
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "Made in 72 hours for Frostjam 23' Game Jam. Download link: https://egemen-ton.itch.io/natural-born-tendencies",
+        gameplay: [
+            "You are a vampire who fell asleep at night instead of hunting. You need to hunt a certain amount of people to get fed and must go to the safe zone before your health runs out. Sun is rising and damaging you more as time passes. You need to be quick. Avoid light sources and stay in the dark.",
+            "Be careful. You are allergic to some blood types. You should only kill the people who have the correct blood type. Otherwise, you lose your health. Don't worry. Your instincts will guide you."
+            ],
+        controls: [
+            "WASD - Movement",
+            "F - Attack from behind",
+            "H - Heal"
+            ],
         image: "images/game.gif",
         details: {
             developmentTime: {
                 icon: "fa-solid fa-clock",
                 title: "Development Time",
-                value: "1 month",
+                value: "3 days",
             },
             status: {
                 icon: "fa-solid fa-circle-info",
                 title: "Status",
-                value: "Released",
+                value: "Released, also improving with new assets and level design",
             },
             teamSize: {
                 icon: "fa-solid fa-people-group",
                 title: "Team Size",
-                value: "1",
+                value: "4",
             },
             engine: {
                 icon: "fa-solid fa-server",
@@ -122,25 +140,118 @@ export const projects = [
             language: {
                 icon: "fa-solid fa-globe",
                 title: "Language",
-                value: "C++",
+                value: "Blueprints",
             },
             contributions: {
                 icon: "fa-solid fa-handshake-angle",
                 title: "Contributions",
-                value: "Player movement, head throwing (Projectile Motion) with preview line, and box pushing",
+                value: "All development, game design, level design",
             },
         },
-        techStack: ["Unreal Engine", "C++", "Blueprints"],
-        youtube: "https://www.youtube.com/embed/pUnargOeXvk",
+        techStack: ["Unreal Engine", "Blueprints"],
+        youtube: "https://youtu.be/FY1r324S1EU",
     },
     {
         id: 4,
         url: "the-ultimate-shooter",
         name: "The Ultimate Shooter",
         shortDescription:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "Result of the 56 hours long Udemy class: Unreal Engine C++ The Ultimate Shooter Course",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "Topics covered are:    ",
+        topics: [
+            "-Character creation and movement",
+            "-Input for PC and console controllers",
+            "-Extensive use of Animation Blueprints (and Anim Instances, their C++ parents)",
+            "-1D and 2D Blendspaces",
+            "-Strafing",
+            "-Turn-in-place",
+            "-Aim Offsets",
+            "-Inverse Kinematics",
+            "-Animation Curves",
+            "-Character lean when running",
+            "-Crouching (with dynamic capsule resizing)",
+            "-Turn hips while running",
+            "-Weapon fire with recoil animations",
+            "-Reloading",
+            "-Weapon blast and impact particles",
+            "-Weapon beam particles (smoke trails)",
+            "-Bullet shell eject particles",
+            "-Sound effects",
+            "-Blending animations per bone, by bool, and by enum - play one animation with one part of the body (running or crouching) while simultaneously playing another animation with another part of the body (reload, aim, or weapon fire)",
+            "-Attach and equip different weapons (pistols, submachine guns, assault rifles)",
+            "-Automatic and semi-automatic gunfire",
+            "-Move different gun parts (the clip/magazine, and pistol slide) during animations",
+            "-Camera zoom while aiming",
+            "-Dynamic crosshairs that spread in reaction to:",
+                [ "-Character speed",
+                "-Weapon fire",
+                "-Aiming",
+                "-Jumping"
+                ],
+            "-Different crosshairs per weapon",
+            "-Widget components, showing:",
+                [ "-Item names",
+                "-Item types",
+                "-Ammo counts",
+                "-Item rarity"
+                ],
+            "-HUD animations",
+            "-Full item inventory system",
+            "-Data tables, in Blueprints and C++",
+            "-Curves to control:",
+                [ "-Item movement during pickup",
+                "-Color and brightness pulse for material effects"
+                ],
+            "-Material creation, including:",
+                ["-Post-process materials",
+                "-Dynamic material instances",
+                "-Setting material properties from C++",
+                "-Driving material properties with curves",
+                "-Material functions",
+                "-Blending materials together",
+                "-Outline effects",
+                "-Glow/pulse effects"
+                ],
+            "-Retargeting animations",
+            "-Retargeting whole Animation Blueprints",
+            "-Numerous gameplay algorithms",
+            "-Use of data structures, including:",
+                ["-Post-process materials",
+                "-structs",
+                "-enums",
+                "-arrays",
+                "-maps",
+                "-and more"
+                ],
+            "-Animation montages",
+            "-Anim Notifies for sounds, weapon trails, and custom notifies",
+            "-Sync markers for footsteps and sync groups",
+            "-Delegates",
+            "-Interfaces",
+            "-Dynamic footsteps that spawn different sounds and particle systems depending on the surface type",
+            "-Physical materials and surface types",
+            "-Niagra particle systems",
+            "-Line traces",
+            "-Enemy AI",
+            "-Behavior Trees and Blackboard Components",
+            "-Multiple enemy types with varying levels of Health, Damage, Size and Movement Speed",
+            "-Headshot damage, with:",
+                ["-Higher damage for headshots",
+                "-Number widgets that pop up and animate with bullet hits",
+                "-Different colored numbers for headshots",
+                ],
+            "-Character and enemy health bars",
+            "-Enemy patrol, agro, chase and attack player",
+            "Death mechanics",
+            "-Stun mechanics",
+            "-Melee attacks with melee weapon trails",
+            "-Explosives that cause damage and death",
+            "-Level prototyping",
+            "-Creating full levels based on our prototypes using professional assets",
+            "-Light baking",
+            "-Post-process effects"
+        ]
         image: "images/game.gif",
         details: {
             developmentTime: {
@@ -151,7 +262,7 @@ export const projects = [
             status: {
                 icon: "fa-solid fa-circle-info",
                 title: "Status",
-                value: "Released",
+                value: "Completed",
             },
             teamSize: {
                 icon: "fa-solid fa-people-group",
@@ -168,34 +279,29 @@ export const projects = [
                 title: "Language",
                 value: "C++",
             },
-            contributions: {
-                icon: "fa-solid fa-handshake-angle",
-                title: "Contributions",
-                value: "Player movement, head throwing (Projectile Motion) with preview line, and box pushing",
-            },
         },
-        techStack: ["Unreal Engine", "C++", "Blueprints"],
-        youtube: "https://www.youtube.com/embed/pUnargOeXvk",
+        techStack: ["Unreal Engine", "C++"],
+        youtube: "https://youtu.be/8u8ScEuO-qU",
     },
     {
         id: 5,
         url: "gas",
         name: "GAS",
         shortDescription:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "Earlier in my internship, I started learning Gameplay Ability System (GAS) and made this small project.",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "I set up the project in C++ and used blueprints to create abilities. Player can use 2 different Gameplay Abilities: Basic Attack and Igni. Normal Attack is self-explanatory, Igni costs mana and sets enemies on fire. All abilities, effects, pickups are working as a part of the GAS",
         image: "images/game.gif",
         details: {
             developmentTime: {
                 icon: "fa-solid fa-clock",
                 title: "Development Time",
-                value: "1 month",
+                value: "3 weeks",
             },
             status: {
                 icon: "fa-solid fa-circle-info",
                 title: "Status",
-                value: "Released",
+                value: "Completed",
             },
             teamSize: {
                 icon: "fa-solid fa-people-group",
@@ -210,16 +316,11 @@ export const projects = [
             language: {
                 icon: "fa-solid fa-globe",
                 title: "Language",
-                value: "C++",
-            },
-            contributions: {
-                icon: "fa-solid fa-handshake-angle",
-                title: "Contributions",
-                value: "Player movement, head throwing (Projectile Motion) with preview line, and box pushing",
+                value: "C++ and Blueprints",
             },
         },
-        techStack: ["Unreal Engine", "C++", "Blueprints"],
-        youtube: "https://www.youtube.com/embed/pUnargOeXvk",
+        techStack: ["Unreal Engine", "C++", "Blueprints", "Gameplay Ability System (GAS)"],
+        youtube: "https://youtu.be/lUhbEqJktOc",
     },
 ];
 
@@ -229,20 +330,20 @@ export const smallProjects = [
         url: "simple-shooter",
         name: "Simple Shooter",
         shortDescription:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "Final project of the 30 hours long Udemy class: Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "Final project of the Udemy class: Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games. I wanted to develop this project further and additionally, I implemented:- Limited ammo system - Reloading - Pickable ammo from ground- Zooming in and out while aiming- Level start animation- Some sound effects. Almost everything is programmed in C++.",
         image: "images/game.gif",
         details: {
             developmentTime: {
                 icon: "fa-solid fa-clock",
                 title: "Development Time",
-                value: "1 month",
+                value: "1 week",
             },
             status: {
                 icon: "fa-solid fa-circle-info",
                 title: "Status",
-                value: "Released",
+                value: "Completed",
             },
             teamSize: {
                 icon: "fa-solid fa-people-group",
@@ -259,21 +360,16 @@ export const smallProjects = [
                 title: "Language",
                 value: "C++",
             },
-            contributions: {
-                icon: "fa-solid fa-handshake-angle",
-                title: "Contributions",
-                value: "Player movement, head throwing (Projectile Motion) with preview line, and box pushing",
-            },
         },
-        techStack: ["Unreal Engine", "C++", "Blueprints"],
-        youtube: "https://www.youtube.com/embed/pUnargOeXvk",
+        techStack: ["Unreal Engine", "C++"],
+        youtube: "https://youtu.be/urb-1d2YoNk",
     },
     {
         id: 2,
         url: "crypt-raider",
         name: "Crypt Raider",
         shortDescription:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "Simple project with 1 month of experience in UE5. Part of the C++ Udemy class",
         description:
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
         image: "images/game.gif",
@@ -281,12 +377,12 @@ export const smallProjects = [
             developmentTime: {
                 icon: "fa-solid fa-clock",
                 title: "Development Time",
-                value: "1 month",
+                value: "1 week",
             },
             status: {
                 icon: "fa-solid fa-circle-info",
                 title: "Status",
-                value: "Released",
+                value: "Completed",
             },
             teamSize: {
                 icon: "fa-solid fa-people-group",
@@ -303,21 +399,16 @@ export const smallProjects = [
                 title: "Language",
                 value: "C++",
             },
-            contributions: {
-                icon: "fa-solid fa-handshake-angle",
-                title: "Contributions",
-                value: "Player movement, head throwing (Projectile Motion) with preview line, and box pushing",
-            },
         },
-        techStack: ["Unreal Engine", "C++", "Blueprints"],
-        youtube: "https://www.youtube.com/embed/pUnargOeXvk",
+        techStack: ["Unreal Engine", "C++"],
+        youtube: "https://youtu.be/fYGTDOQBFm0",
     },
     {
         id: 3,
         url: "obstacle-assault",
         name: "Obstacle Assault",
         shortDescription:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "Really simple project with less than 1 month of experience in UE5. Part of the C++ Udemy class",
         description:
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
         image: "images/game.gif",
@@ -325,12 +416,12 @@ export const smallProjects = [
             developmentTime: {
                 icon: "fa-solid fa-clock",
                 title: "Development Time",
-                value: "1 month",
+                value: "1 week",
             },
             status: {
                 icon: "fa-solid fa-circle-info",
                 title: "Status",
-                value: "Released",
+                value: "Completed",
             },
             teamSize: {
                 icon: "fa-solid fa-people-group",
@@ -347,29 +438,20 @@ export const smallProjects = [
                 title: "Language",
                 value: "C++",
             },
-            contributions: {
-                icon: "fa-solid fa-handshake-angle",
-                title: "Contributions",
-                value: "Player movement, head throwing (Projectile Motion) with preview line, and box pushing",
-            },
         },
-        techStack: ["Unreal Engine", "C++", "Blueprints"],
-        youtube: "https://www.youtube.com/embed/pUnargOeXvk",
+        techStack: ["Unreal Engine", "C++"],
+        youtube: "https://youtu.be/IrpIh5CjNDc",
     },
 ];
 
 export const skills = [
-    "C++",
-    "C#",
     "Unreal Engine",
-    "Unity",
+    "C++",
     "Blueprints",
-    "Git",
-    "GitHub",
-    "GitLab",
-    "Jira",
-    "Trello",
-    "Agile",
+    "Game Development",
+    "Gameplay Programming",
+    "Gameplay Ability System (GAS)",
+    "Git"
 ];
 
 export const games = [

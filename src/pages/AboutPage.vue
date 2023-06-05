@@ -16,21 +16,12 @@ import { skills, games } from "@/stores/index";
             ABOUT ME
         </h3>
         <p class="text-xl">
-            I have been interested in game development for a long time. My first
-            experience was with Valve's "Hammer" Editor, but I later moved to
-            GameMaker and Unity where I started to learn how to program. In
-            university, I initially studied Game Design, but it was during my
-            time there that I realized programming was what I enjoyed most about
-            developing games.
+            I am a passionate gamer and a game developer. After graduating as a Physics Engineer at one of the top schools in Turkey, I decided to follow my real passion, game programming. 
+            I have one year of experience with game programming using Unreal Engine (C++/Blueprints). I live with the dream of making games worth the players' time and offering them unforgettable experiences, similar to the experiences I am having with my favorite games.
         </p>
         <p class="text-xl mt-10">
-            I've made it a personal goal to be programming language and
-            game-engine agnostic, as some are better suited for certain tasks
-            than others, and they all come with their own pros & cons. I strive
-            to always improve upon my own skills, and like to try different
-            approaches to problems I have encountered before. In a team I try to
-            help out whenever I have time, as solving problems together is both
-            fun and an opportunity to learn something new!
+            Over the last year, I made various projects both individually and as a part of a team. Presently, I am employed by a company where I contribute to the development of player abilities utilizing the Gameplay Ability System (GAS) framework for a MOBA game called Hit&Boom.
+            Additionally, outside of my regular working hours, I hold the position of Lead Developer for an indie game project. Our objective is to release a demo on Steam NextFest in October. I invite you to explore my work, particularly a project titled "Hear Me Not," which can be found in the Featured Projects section of this website.
         </p>
         <h3 class="text-center text-2xl font-bold my-10 text-yellow-500">
             SKILLS
