@@ -4,7 +4,7 @@ import { projects, smallProjects } from "@/stores/index";
 
 const route = useRoute();
 const { projectName } = route.params as any;
-let project = projects.find((project) => project.url === projectName);
+let project: any = projects.find((project) => project.url === projectName);
 if (!project) {
     project = smallProjects.find((project) => project.url === projectName);
 }
@@ -82,7 +82,7 @@ if (!project) {
                 <div class="mt-4">
                     <ul class="my-2">
                         <li
-                            class="text-xl font-bold mt-4"
+                            class="text-xl mt-4"
                             v-for="(gameplay, key) in project.gameplay"
                             :key="key"
                         >
@@ -112,11 +112,27 @@ if (!project) {
                 <div class="mt-4">
                     <ul class="my-2">
                         <li
-                            class="text-xl font-bold mt-4"
+                            class="text-xl mt-4"
                             v-for="(control, key) in project?.controls"
                             :key="key"
                         >
                             {{ control }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8" v-if="project?.features">
+                <h3 class="text-2xl flex items-end text-yellow-500">
+                    Features
+                </h3>
+                <div class="mt-4">
+                    <ul class="my-2">
+                        <li
+                            class="text-xl mt-4"
+                            v-for="(feature, key) in project?.features"
+                            :key="key"
+                        >
+                            {{ feature }}
                         </li>
                     </ul>
                 </div>

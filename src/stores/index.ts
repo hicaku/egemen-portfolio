@@ -8,9 +8,7 @@ export const projects = [
         shortDescription:
             "Work in progress indie game student project. I've been working as a Lead Developer with a team of more than 10 people.",
         description:
-            "This is an indie game student project I made with a team of more than 10 people. I've been working as a Lead Developer. Except for the Enemy AI, basically, I programmed the game all by myself. We created a playable demo in 3 months and presented it at school.", 
-            "Sometimes, I created systems from the ground up, such as the Rail Camera System. Other times, I followed tutorials and made significant modifications to existing code to align with our game's design requirements. Developing a relatively ambitious game independently, starting from scratch, necessitated solving countless problems and delving into topics that were unfamiliar to me, such as Save/Load and Checkpoint systems. I believe that I gained a lot of experience from this project.",
-            "I will write here a detailed explanation about mechanics as soon as possible. Please watch the video for now.",
+            "This is an indie game student project I made with a team of more than 10 people. I've been working as a Lead Developer. Except for the Enemy AI, basically, I programmed the game all by myself. We created a playable demo in 3 months and presented it at school. Sometimes, I created systems from the ground up, such as the Rail Camera System. Other times, I followed tutorials and made significant modifications to existing code to align with our game's design requirements. Developing a relatively ambitious game independently, starting from scratch, necessitated solving countless problems and delving into topics that were unfamiliar to me, such as Save/Load and Checkpoint systems. I believe that I gained a lot of experience from this project. I will write here a detailed explanation about mechanics as soon as possible. Please watch the video for now.",
         image: "images/gifs/Hear_Me_Not.gif",
         details: {
             developmentTime: {
@@ -152,7 +150,8 @@ export const projects = [
         name: "The Ultimate Shooter",
         shortDescription:
             "Result of the 56 hours long Udemy class: Unreal Engine C++ The Ultimate Shooter Course",
-        description: "Result of the 56 hours long Udemy class: Unreal Engine C++ The Ultimate Shooter Course. Topics covered are listed below the video.",
+        description:
+            "Result of the 56 hours long Udemy class: Unreal Engine C++ The Ultimate Shooter Course. Topics covered are listed below the video.",
         image: "images/gifs/The_Ultimate_Shooter.gif",
         topics: [
             "Character creation and movement",
@@ -327,19 +326,19 @@ export const smallProjects = [
         name: "Simple Shooter",
         shortDescription:
             "Final project of the 30 hours long Udemy class: Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games",
-        description: 
+        description:
             "Final project of the 30 hours long Udemy class: Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games.",
-        
+
         features: [
             "I wanted to develop this project further and additionally, I implemented:",
             [
-            "Limited ammo system",
-            "Reloading", 
-            "Pickable ammo from ground",
-            "Zooming in and out while aiming",
-            "Level start animation",
-            "Some sound effects."
-            ], 
+                "Limited ammo system",
+                "Reloading",
+                "Pickable ammo from ground",
+                "Zooming in and out while aiming",
+                "Level start animation",
+                "Some sound effects.",
+            ],
             "Almost everything is programmed in C++.",
         ],
         image: "images/gifs/Simple_Shooter.gif",
