@@ -21,7 +21,8 @@ if (!project) {
                 <h3 class="text-2xl flex items-end text-yellow-500">
                     Description
                 </h3>
-                <p class="text-xl mt-4">{{ project?.description }}</p>
+                <div class="text-xl mt-4" v-html="project?.description"></div>
+                <br class=" " />
             </div>
             <div class="mt-8">
                 <h3 class="text-2xl flex items-end text-yellow-500">
@@ -54,9 +55,8 @@ if (!project) {
                         :key="key"
                         class="my-2 list-disc list-inside"
                     >
-                        <div></div>
                         <li
-                            class="text-xl font-bold mt-4"
+                            class="text-xl mt-4"
                             v-if="typeof topic === 'string'"
                         >
                             {{ topic }}
@@ -67,9 +67,7 @@ if (!project) {
                                 :key="key"
                                 class="ml-10 my-2"
                             >
-                                <span class="text-xl font-bold mt-4">{{
-                                    subTopic
-                                }}</span>
+                                <span class="text-xl mt-4">{{ subTopic }}</span>
                             </li>
                         </div>
                     </ul>
@@ -126,14 +124,28 @@ if (!project) {
                     Features
                 </h3>
                 <div class="mt-4">
-                    <ul class="my-2">
+                    <ul
+                        v-for="(feature, key) in project?.features"
+                        :key="key"
+                        class="my-2 list-inside"
+                    >
                         <li
                             class="text-xl mt-4"
-                            v-for="(feature, key) in project?.features"
-                            :key="key"
+                            v-if="typeof feature === 'string'"
                         >
                             {{ feature }}
                         </li>
+                        <div v-else-if="typeof feature === 'object'">
+                            <li
+                                v-for="(subFeature, key) in feature"
+                                :key="key"
+                                class="ml-10 my-2 list-disc"
+                            >
+                                <span class="text-xl mt-4">{{
+                                    subFeature
+                                }}</span>
+                            </li>
+                        </div>
                     </ul>
                 </div>
             </div>
