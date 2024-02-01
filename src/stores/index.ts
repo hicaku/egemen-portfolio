@@ -5,7 +5,7 @@ export const projects = [
         id: 1,
         url: "hit-and-boom",
         name: "Hit and Boom",
-        shortDescription: "MOBA/Battle Royale game.",
+        shortDescription: "MOBA/Battle Royale game I have been contributing to since last year and developed AI for.",
         description:
             "I am currently working on a Battle Royale/MOBA game called 'Hit and Boom' using Unreal Engine. Throughout the project, I have actively contributed to various aspects, including gameplay, AI, and UI. My primary focus has been on player abilities, where I've been involved in developing new abilities and addressing bugs. Additionally, I have worked on UI elements and enhanced my network programming skills to accommodate the multiplayer nature of the game.<br><br> One of the key highlights of my contributions to this project is the design and programming of the game's AI, where I had the freedom to create the system from scratch. These AI characters move in teams of three while staying in the zone, clearing enemy camps, engaging in fights using skills, strategically avoiding disadvantaged situations, and surviving until reaching the final zone. The resulting work received positive feedback from both players and my colleagues.",
         image: "images/gifs/Hit_And_Boom.gif",
