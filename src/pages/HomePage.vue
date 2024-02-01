@@ -59,8 +59,8 @@ const { downloadCV } = store;
         </div>
         <blockquote class="text-2xl italic text-center">
             I love transforming an abstract gameplay idea into a concrete system
-            that the player can interact with. Programming new systems and
-            seeing them work is the best!
+            that the player can interact with.<br> Programming new systems and
+            seeing them work is the best!  Currently, my special interests are Game AI and Game Design.
         </blockquote>
         <FeaturedProjects class="pt-10" id="featuredProjects" />
         <SmallProjects class="pt-10" />

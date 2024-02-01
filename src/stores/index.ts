@@ -3,12 +3,67 @@ import { defineStore } from "pinia";
 export const projects = [
     {
         id: 1,
+        url: "hit-and-boom",
+        name: "Hit and Boom",
+        shortDescription: "MOBA/Battle Royale game.",
+        description:
+            "I am currently working on a Battle Royale/MOBA game called 'Hit and Boom' using Unreal Engine. Throughout the project, I have actively contributed to various aspects, including gameplay, AI, and UI. My primary focus has been on player abilities, where I've been involved in developing new abilities and addressing bugs. Additionally, I have worked on UI elements and enhanced my network programming skills to accommodate the multiplayer nature of the game.<br><br> One of the key highlights of my contributions to this project is the design and programming of the game's AI, where I had the freedom to create the system from scratch. These AI characters move in teams of three while staying in the zone, clearing enemy camps, engaging in fights using skills, strategically avoiding disadvantaged situations, and surviving until reaching the final zone. The resulting work received positive feedback from both players and my colleagues.",
+        image: "images/gifs/Hit_And_Boom.gif",
+        details: {
+            developmentTime: {
+                icon: "fa-solid fa-clock",
+                title: "Development Time",
+                value: "3+ years",
+            },
+            status: {
+                icon: "fa-solid fa-circle-info",
+                title: "Status",
+                value: "on Open Beta, Full Release around middle of 2024",
+            },
+            teamSize: {
+                icon: "fa-solid fa-people-group",
+                title: "Team Size",
+                value: "5 Developers, 30+ Size in Total",
+            },
+            engine: {
+                icon: "fa-solid fa-server",
+                title: "Engine",
+                value: "Unreal Engine 4",
+            },
+            language: {
+                icon: "fa-solid fa-globe",
+                title: "Language",
+                value: "C++ and Blueprints",
+            },
+        },
+        techStack: ["Unreal Engine", "C++", "Blueprints", "Gameplay", "AI", "UI", "Network", "Gameplay Ability System (GAS)"],
+        youtube: "https://www.youtube.com/embed/YnoifQy3IzA",
+        
+    },
+    {
+        id: 2,
         url: "hear-me-not",
         name: "Hear Me Not",
         shortDescription:
-            "Indie game student project. I've worked as a solo developer with a team of more than 10 people.",
+            "Indie game student project. I've worked as a solo programmer with a team of more than 10 people.",
         description:
-            "<p>I've worked on this indie game student project with a team of more than 10 people. Except for the AI, I programmed the game all by myself. We created a playable demo in 3 months and presented it at school. <br> Sometimes, I created systems from the ground up. Other times, I followed tutorials and significantly modified existing code to align with our game's design requirements.<br> Starting from scratch, developing a relatively ambitious game with many artists and designers, necessitated solving countless problems and delving into topics that were unfamiliar to me back then. <br> I believe that I gained a lot of experience from this project. Below, you'll find detailed explanations of the game systems I've programmed:",
+            "I've worked on this indie game student project with a team of more than 10 people. Except for the AI, I programmed the game all by myself. We created a playable demo in 3 months and presented it at school. Sometimes, I created systems from the ground up. Other times, I followed tutorials and significantly modified existing code to align with our game's design requirements. Starting from scratch, developing a relatively ambitious game with many artists and designers, necessitated solving countless problems and delving into topics that were unfamiliar to me back then. I believe that I gained a lot of experience from this project. Below, you'll find detailed explanations of the game systems I've programmed:",
+        mechanics: [
+            "Implemented a system for equipping weapons, allowing them to be attached to both the body and hand.", 
+            "The Last of Us-inspired equipment UI, compatible with both keyboard and controller", 
+            "Created weapons, including spears and crossbows, capable of causing damage, with the unique feature of crossbow bolts sticking to walls upon impact.",
+            "Ranged Weapons: Utilized projectile path prediction system and spline mesh to visually represent the trajectory. Programmed aiming logic in the animation blueprint.", 
+            "Interaction System: Implemented for various in-game actions, such as moving platforms, opening doors, looting items, and equipping weapons found on the ground.",
+            "Climbing: Implemented ladder climbing and rock climbing (2D movement). Climbing has its own Input Mapping Context, preventing players from using other inputs such as shooting while climbing.", 
+            "Rail Camera System: Developed camera tools for level designers to utilize. The camera tracks the player while moving on spline paths. Camera is customizable, it can rotate to the character, follow on the corridor axis, follow on depth axis with a desirable amount. Trigger boxes strategically positioned in the level trigger dynamic camera changes.",
+            "Vaulting Climbing System: Implemented a dynamic system for vaulting and climbing, selecting the appropriate animation based on obstacle height and depth.", 
+            "Dialogue System: Utilized a data table to store NPC IDs, lines, and voices. When approached to an NPC and pressed button, the UI widget appears, the camera zooms, and voice lines are played if the NPC has something to say. Dialogues are skippable. Dialogue cancels itself when moving away from NPCs.",
+            "Save & Load System: When overlapped with BP_Checkpoint, it saves the player's health, location, equipment, and active camera. Upon death, the player respawns at the last checkpoint. The player can carry information between levels with this save and load system.", 
+            "Sound Bar: The main mechanic of the game, the player generates sound through actions like walking, jumping, shooting, and attacking. Each action has its sound amount, contributing cumulatively to the total sound level displayed on the HUD. We had planned to spawn more enemies with each surpassed threshold (similar to the GTA police level).",
+            "Basic Inventory System: players can collect items, drop them physically on the ground, and utilize them for effects like health boosts.", 
+            "Implemented a system for opening chests, transferring items between chests and inventory, and stacking items on top of each other.",
+            "Implemented narrative voice lines triggered by specific locations using trigger boxes.", 
+            "Implemented fall damage"],
         image: "images/gifs/Hear_Me_Not.gif",
         details: {
             developmentTime: {
@@ -42,11 +97,11 @@ export const projects = [
                 value: "All development except for the Enemy AI",
             },
         },
-        techStack: ["Unreal Engine", "Blueprints"],
+        techStack: ["Unreal Engine", "Blueprints", "Gameplay", "UI"],
         youtube: "https://www.youtube.com/embed/ZLqHHJ_eFfs",
     },
     {
-        id: 2,
+        id: 3,
         url: "the-banner-saga",
         name: "The Banner Saga",
         shortDescription:
@@ -63,7 +118,6 @@ export const projects = [
             "3 different character classes with their own stats (STR, ARM, attack range)",
             "More character classes and their stats can be added easily in the editor",
             "2 types of attack options (Strength and Break Attack). All damage logic is coded as in the original game",
-            "The grid structure is not functional at the moment. Grid and limited movement system which is similar to the original game are planned for a future version",
         ],
         image: "images/gifs/The_Banner_Saga.gif",
         details: {
@@ -93,32 +147,32 @@ export const projects = [
                 value: "Blueprints",
             },
         },
-        techStack: ["Unreal Engine", "Blueprints"],
+        techStack: ["Unreal Engine", "Blueprints", "Gameplay", "UI", "Network"],
         youtube: "https://www.youtube.com/embed/pUnargOeXvk",
     },
     {
-        id: 3,
+        id: 4,
         url: "vampire-game",
         name: "Vampire Game",
-        shortDescription: "Made in 72 hours for a Game Jam",
+        shortDescription: "Made in 72 hours for a Game Jam. Improved for couple months afterwards.",
         description:
-            "Made in 72 hours for Frostjam 23' Game Jam. Download link: https://egemen-ton.itch.io/natural-born-tendencies",
+            "Made in 72 hours for Frostjam 23' Game Jam. Improved for couple months afterwards.<br><br> Download link: https://egemen-ton.itch.io/natural-born-tendencies<br> 72 Hours Version: https://youtu.be/FY1r324S1EU?si=XTafadhU201H0aE_ <br><br> New version has:<br> - Updated Characters<br> - New Animations<br> - New Environment and Level Design<br> - New Sound Effects<br> - Main Menu & Settings<br> - Difficulty Levels & Progression System<br> - Quality of Life Improvements<br> - Bug Fixes",
         gameplay: [
             "You are a vampire who fell asleep at night instead of hunting. You need to hunt a certain amount of people to get fed and must go to the safe zone before your health runs out. Sun is rising and damaging you more as time passes. You need to be quick. Avoid light sources and stay in the dark.",
             "Be careful. You are allergic to some blood types. You should only kill the people who have the correct blood type. Otherwise, you lose your health. Don't worry. Your instincts will guide you.",
         ],
         controls: ["WASD - Movement", "F - Attack from behind", "H - Heal"],
-        image: "images/gifs/Vampir.gif",
+        image: "images/gifs/Vampire.gif",
         details: {
             developmentTime: {
                 icon: "fa-solid fa-clock",
                 title: "Development Time",
-                value: "3 days",
+                value: "3 days + couple months",
             },
             status: {
                 icon: "fa-solid fa-circle-info",
                 title: "Status",
-                value: "Released, also improving with new assets and level design",
+                value: "Released",
             },
             teamSize: {
                 icon: "fa-solid fa-people-group",
@@ -138,18 +192,19 @@ export const projects = [
             contributions: {
                 icon: "fa-solid fa-handshake-angle",
                 title: "Contributions",
-                value: "All development, game design, level design",
+                value: "All Development, Game Design, Level Design",
             },
         },
-        techStack: ["Unreal Engine", "Blueprints"],
-        youtube: "https://www.youtube.com/embed/FY1r324S1EU",
+        techStack: ["Unreal Engine", "Blueprints", "Gameplay", "UI"],
+        youtube: "https://www.youtube.com/embed/LzRNQDpXIFQ",
+        
     },
     {
-        id: 4,
+        id: 5,
         url: "the-ultimate-shooter",
         name: "The Ultimate Shooter",
         shortDescription:
-            "Result of the 56 hours long Udemy class: Unreal Engine C++ The Ultimate Shooter Course",
+            "Result of the 56 hours long Udemy class: Unreal Engine C++ The Ultimate Shooter Course.",
         description:
             "Result of the 56 hours long Udemy class: Unreal Engine C++ The Ultimate Shooter Course. Topics covered are listed below the video.",
         image: "images/gifs/The_Ultimate_Shooter.gif",
@@ -270,11 +325,11 @@ export const projects = [
                 value: "C++",
             },
         },
-        techStack: ["Unreal Engine", "C++"],
+        techStack: ["Unreal Engine", "Blueprints", "Gameplay", "UI", "AI"],
         youtube: "https://www.youtube.com/embed/8u8ScEuO-qU",
     },
     {
-        id: 5,
+        id: 6,
         url: "gas",
         name: "GAS",
         shortDescription:
@@ -313,7 +368,10 @@ export const projects = [
             "Unreal Engine",
             "C++",
             "Blueprints",
+            "Gameplay",
+            "UI",
             "Gameplay Ability System (GAS)",
+            "Network"
         ],
         youtube: "https://www.youtube.com/embed/lUhbEqJktOc",
     },
@@ -322,10 +380,49 @@ export const projects = [
 export const smallProjects = [
     {
         id: 1,
+        url: "GGJ24",
+        name: "GGJ24",
+        shortDescription:
+            "Made in 48 hours for Global Game Jam 2024.",
+        description:
+            "JubJub was made in 48 hours for Global Game Jam 2024. This is a local coop party game which can be played with 2-4 players. I worked as a solo programmer with 6 artists 2 sound designers and 1 technical designer.",
+        image: "images/gifs/JubJub.gif",
+        details: {
+            developmentTime: {
+                icon: "fa-solid fa-clock",
+                title: "Development Time",
+                value: "2 Days",
+            },
+            status: {
+                icon: "fa-solid fa-circle-info",
+                title: "Status",
+                value: "Completed",
+            },
+            teamSize: {
+                icon: "fa-solid fa-people-group",
+                title: "Team Size",
+                value: "9",
+            },
+            engine: {
+                icon: "fa-solid fa-server",
+                title: "Engine",
+                value: "Unreal Engine",
+            },
+            language: {
+                icon: "fa-solid fa-globe",
+                title: "Language",
+                value: "Blueprints",
+            },
+        },
+        techStack: ["Unreal Engine", "Blueprints", "Gameplay", "UI"],
+        youtube: "https://www.youtube.com/embed/W2o_c8IAbIc",
+    },
+    {
+        id: 2,
         url: "simple-shooter",
         name: "Simple Shooter",
         shortDescription:
-            "Final project of the 30 hours long Udemy class: Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games",
+            "Final project of the 30 hours long Udemy class: Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games.",
         description:
             "Final project of the 30 hours long Udemy class: Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games.",
 
@@ -369,17 +466,17 @@ export const smallProjects = [
                 value: "C++",
             },
         },
-        techStack: ["Unreal Engine", "C++"],
+        techStack: ["Unreal Engine", "C++", "Gameplay", "UI", "AI"],
         youtube: "https://www.youtube.com/embed/urb-1d2YoNk",
     },
     {
-        id: 2,
+        id: 3,
         url: "crypt-raider",
         name: "Crypt Raider",
         shortDescription:
-            "Simple project with 1 month of experience in UE5. Part of the C++ Udemy class",
+            "Simple project with 1 month of experience in UE5. Part of the C++ Udemy class.",
         description:
-            "Simple project with 1 month of experience in UE5. Part of the C++ Udemy class",
+            "Simple project with 1 month of experience in UE5. Part of the C++ Udemy class.",
         image: "images/gifs/Crypt_Raider.gif",
         details: {
             developmentTime: {
@@ -408,17 +505,17 @@ export const smallProjects = [
                 value: "C++",
             },
         },
-        techStack: ["Unreal Engine", "C++"],
+        techStack: ["Unreal Engine", "C++", "Gameplay"],
         youtube: "https://www.youtube.com/embed/fYGTDOQBFm0",
     },
     {
-        id: 3,
+        id: 4,
         url: "obstacle-assault",
         name: "Obstacle Assault",
         shortDescription:
-            "Really simple project with less than 1 month of experience in UE5. Part of the C++ Udemy class",
+            "Really simple project with less than 1 month of experience in UE5. Part of the C++ Udemy class.",
         description:
-            "Really simple project with less than 1 month of experience in UE5. Part of the C++ Udemy class",
+            "Really simple project with less than 1 month of experience in UE5. Part of the C++ Udemy class.",
         image: "images/gifs/Obstacle_Assault.gif",
         details: {
             developmentTime: {
@@ -447,7 +544,7 @@ export const smallProjects = [
                 value: "C++",
             },
         },
-        techStack: ["Unreal Engine", "C++"],
+        techStack: ["Unreal Engine", "C++", "Gameplay"],
         youtube: "https://www.youtube.com/embed/IrpIh5CjNDc",
     },
 ];
@@ -456,8 +553,11 @@ export const skills = [
     "Unreal Engine",
     "C++",
     "Blueprints",
-    "Game Development",
-    "Gameplay Programming",
+    "Game Programming",
+    "Gameplay",
+    "AI",
+    "UI",
+    "Network",
     "Gameplay Ability System (GAS)",
     "Git",
 ];

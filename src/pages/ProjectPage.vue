@@ -119,6 +119,32 @@ if (!project) {
                     </ul>
                 </div>
             </div>
+            <div class="mt-8" v-if="project?.mechanics">
+                <h3 class="text-2xl flex items-end text-yellow-500">Mechanics</h3>
+                <div class="mt-4">
+                    <ul
+                        v-for="(topic, key) in project?.mechanics"
+                        :key="key"
+                        class="my-2 list-disc list-inside"
+                    >
+                        <li
+                            class="text-xl mt-4"
+                            v-if="typeof topic === 'string'"
+                        >
+                            {{ topic }}
+                        </li>
+                        <div v-else-if="typeof topic === 'object'">
+                            <li
+                                v-for="(subTopic, key) in topic"
+                                :key="key"
+                                class="ml-10 my-2"
+                            >
+                                <span class="text-xl mt-4">{{ subTopic }}</span>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
             <div class="mt-8" v-if="project?.features">
                 <h3 class="text-2xl flex items-end text-yellow-500">
                     Features

@@ -5,7 +5,7 @@ import { smallProjects } from "@/stores/index";
 <template>
     <div>
         <h3 class="text-center text-2xl font-bold mb-10 text-yellow-500">
-            SMALL PROJECTS
+            SMALLER PROJECTS
         </h3>
         <div class="flex flex-wrap h-fit">
             <RouterLink
