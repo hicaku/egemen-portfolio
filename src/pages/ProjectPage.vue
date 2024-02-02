@@ -44,7 +44,7 @@ if (!project) {
                     :src="project?.youtube"
                     frameborder="0"
                     allowfullscreen
-                    class="mt-4 w-full h-96 rounded-lg"
+                    class="mt-4 w-full max-w-2xl h-96 rounded-lg"
                 ></iframe>
             </div>
             <div class="mt-8" v-if="project?.topics">
@@ -120,7 +120,9 @@ if (!project) {
                 </div>
             </div>
             <div class="mt-8" v-if="project?.mechanics">
-                <h3 class="text-2xl flex items-end text-yellow-500">Mechanics</h3>
+                <h3 class="text-2xl flex items-end text-yellow-500">
+                    Mechanics
+                </h3>
                 <div class="mt-4">
                     <ul
                         v-for="(topic, key) in project?.mechanics"
