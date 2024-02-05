@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import ContactMe from "@/components/ContactMe.vue";
 import FeaturedProjects from "@/components/FeaturedProjects.vue";
 import SmallProjects from "@/components/SmallProjects.vue";
 
@@ -59,12 +58,12 @@ const { downloadCV } = store;
         </div>
         <blockquote class="text-2xl italic text-center">
             I love transforming an abstract gameplay idea into a concrete system
-            that the player can interact with.<br> Programming new systems and
-            seeing them work is the best!  Currently, my special interests are Game AI and Game Design.
+            that the player can interact with.<br />
+            Programming new systems and seeing them work is the best! Currently,
+            my special interests are Game AI and Game Design.
         </blockquote>
         <FeaturedProjects class="pt-10" id="featuredProjects" />
         <SmallProjects class="pt-10" />
-        <ContactMe class="py-10" />
     </main>
 </template>
 <style scoped>

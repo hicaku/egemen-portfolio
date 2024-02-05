@@ -24,6 +24,7 @@ import {
     faPeopleGroup,
     faGlobe,
     faServer,
+    faHeart
 } from "@fortawesome/free-solid-svg-icons";
 import {
     faLinkedin,
@@ -48,6 +49,7 @@ library.add(
     faPeopleGroup,
     faGlobe,
     faServer,
+    faHeart,
     // brands
     faLinkedin,
     faGithub,

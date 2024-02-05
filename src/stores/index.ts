@@ -558,8 +558,8 @@ export const skills = [
     "AI",
     "UI",
     "Network",
-    "Gameplay Ability System (GAS)",
     "Git",
+    "Gameplay Ability System (GAS)",
 ];
 
 export const games = [

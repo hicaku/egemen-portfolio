@@ -21,5 +21,19 @@ import { links } from "@/stores/index";
                 />
             </a>
         </div>
+        <span class="text-center block mt-10 text-xs">
+            Last updated on 05.02.2024 - Made by
+            <a
+                href="https://github.com/hicaku"
+                target="_blank"
+                class="text-yellow-500 hover:underline"
+                >hicaku</a
+            >
+            with Vue 3, TypeScript, Tailwind CSS and most importantly, love
+            <font-awesome-icon
+                icon="fas fa-heart"
+                class="text-red-500 animate-pulse duration-300"
+            />
+        </span>
     </div>
 </template>

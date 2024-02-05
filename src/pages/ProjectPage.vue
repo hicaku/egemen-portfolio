@@ -10,7 +10,7 @@ if (!project) {
 }
 </script>
 <template>
-    <div class="pb-10">
+    <div>
         <div class="px-5 sm:px-40">
             <h3
                 class="mt-10 text-center text-2xl font-bold mb-10 text-yellow-500"
