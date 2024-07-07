@@ -3,11 +3,50 @@ import { defineStore } from "pinia";
 export const projects = [
     {
         id: 1,
-        url: "hit-and-boom",
-        name: "Hit and Boom",
-        shortDescription: "MOBA/Battle Royale game I have been contributing to since last year and developed AI for.",
+        url: "Contain",
+        name: "Contain (Steam)",
+        shortDescription: "First-person cooperative tactical shooter game. I started working on it in July 2024.",
         description:
-            "I am currently working on a Battle Royale/MOBA game called 'Hit and Boom' using Unreal Engine. Throughout the project, I have actively contributed to various aspects, including gameplay, AI, and UI. My primary focus has been on player abilities, where I've been involved in developing new abilities and addressing bugs. Additionally, I have worked on UI elements and enhanced my network programming skills to accommodate the multiplayer nature of the game.<br><br> One of the key highlights of my contributions to this project is the design and programming of the game's AI, where I had the freedom to create the system from scratch. These AI characters move in teams of three while staying in the zone, clearing enemy camps, engaging in fights using skills, strategically avoiding disadvantaged situations, and surviving until reaching the final zone. The resulting work received positive feedback from both players and my colleagues.",
+            "Contain is a first-person cooperative tactical shooter game that I started working on in July 2024.",
+        image: "images/gifs/Contain.gif",
+        details: {
+            developmentTime: {
+                icon: "fa-solid fa-clock",
+                title: "Development Time",
+                value: "2+ years",
+            },
+            status: {
+                icon: "fa-solid fa-circle-info",
+                title: "Status",
+                value: "Early Access",
+            },
+            teamSize: {
+                icon: "fa-solid fa-people-group",
+                title: "Team Size",
+                value: "5 Developers, 15+ Size in Total",
+            },
+            engine: {
+                icon: "fa-solid fa-server",
+                title: "Engine",
+                value: "Unreal Engine 5",
+            },
+            language: {
+                icon: "fa-solid fa-globe",
+                title: "Language",
+                value: "C++ and Blueprints",
+            },
+        },
+        techStack: ["Unreal Engine", "C++", "Blueprints", "Gameplay", "AI", "UI", "Network"],
+        youtube: "https://www.youtube.com/embed/Fl_MjB6FbcA",
+        
+    },
+    {
+        id: 2,
+        url: "hit-and-boom",
+        name: "Hit and Boom (Steam)",
+        shortDescription: "A MOBA/Battle Royale game I contributed to for a year and developed AI for.",
+        description:
+            "I worked on a Battle Royale/MOBA game called 'Hit and Boom' using Unreal Engine. Throughout the project, I actively contributed to various aspects, including gameplay, AI, and UI. My primary focus was on player abilities, where I was involved in developing new abilities and addressing bugs. Additionally, I worked on UI elements and enhanced my network programming skills to accommodate the multiplayer nature of the game. <br><br> One of the key highlights of my contributions to this project was the design and programming of the game's AI, where I had the freedom to create the system from scratch. These AI characters move in teams of three while staying in the zone, clearing enemy camps, engaging in fights using skills, strategically avoiding disadvantaged situations, and surviving until reaching the final zone. The resulting work received positive feedback from both players and my colleagues.",
         image: "images/gifs/Hit_And_Boom.gif",
         details: {
             developmentTime: {
@@ -18,12 +57,12 @@ export const projects = [
             status: {
                 icon: "fa-solid fa-circle-info",
                 title: "Status",
-                value: "on Open Beta, Full Release around middle of 2024",
+                value: "Open Beta",
             },
             teamSize: {
                 icon: "fa-solid fa-people-group",
                 title: "Team Size",
-                value: "5 Developers, 30+ Size in Total",
+                value: "5 Developers, 25+ Size in Total",
             },
             engine: {
                 icon: "fa-solid fa-server",
@@ -41,13 +80,13 @@ export const projects = [
         
     },
     {
-        id: 2,
+        id: 3,
         url: "hear-me-not",
         name: "Hear Me Not",
         shortDescription:
-            "Indie game student project. I've worked as a solo programmer with a team of more than 10 people.",
+            "2.5D adventure game project. I've worked as a solo programmer with a team of more than 10 people.",
         description:
-            "I've worked on this indie game student project with a team of more than 10 people. Except for the AI, I programmed the game all by myself. We created a playable demo in 3 months and presented it at school. Sometimes, I created systems from the ground up. Other times, I followed tutorials and significantly modified existing code to align with our game's design requirements. Starting from scratch, developing a relatively ambitious game with many artists and designers, necessitated solving countless problems and delving into topics that were unfamiliar to me back then. I believe that I gained a lot of experience from this project. Below, you'll find detailed explanations of the game systems I've programmed:",
+            "I've worked on this indie game student project with a team of more than 10 people. Except for the AI, I programmed the game all by myself. We created a playable demo in 3 months and presented it at school. Sometimes, I created systems from the ground up. Other times, I followed tutorials and significantly modified existing code to align with our game's design requirements. <br><br> Starting from scratch, developing a relatively ambitious game with many artists and designers, necessitated solving countless problems and delving into topics that were unfamiliar to me back then. I believe that I gained a lot of experience from this project. Below, you'll find detailed explanations of the game systems I've programmed:",
         mechanics: [
             "Implemented a system for equipping weapons, allowing them to be attached to both the body and hand.", 
             "The Last of Us-inspired equipment UI, compatible with both keyboard and controller", 
@@ -84,7 +123,7 @@ export const projects = [
             engine: {
                 icon: "fa-solid fa-server",
                 title: "Engine",
-                value: "Unreal Engine",
+                value: "Unreal Engine 5",
             },
             language: {
                 icon: "fa-solid fa-globe",
@@ -101,30 +140,31 @@ export const projects = [
         youtube: "https://www.youtube.com/embed/ZLqHHJ_eFfs",
     },
     {
-        id: 3,
-        url: "the-banner-saga",
-        name: "The Banner Saga",
+        id: 4,
+        url: "photo-mode-project",
+        name: "Photo Mode Project",
         shortDescription:
-            "I wanted to clone a game that I loved playing, The Banner Saga. This is a multiplayer turn-based tactical-combat game prototype.",
+            "A feature inspired by the modern AAA game photo modes seen in titles like Hellblade II.",
         description:
-            "In this project, I wanted to clone a game that I loved playing, The Banner Saga. This is a multiplayer turn-based tactical-combat game prototype, developed with Unreal Engine 5 (Blueprints). More details: https://egemen-ton.itch.io/banner-saga-clone",
-        rules: [
-            "You are allowed to control only one character per turn and have to decide whether to move to a location or attack the enemy, if they are already in range.",
-            "You must choose between 2 types of attack. The strategy is to decide where you want to attack, to the opponent's Strength or Armor. STR attacks weaken the enemy and reduce their attack output permanently, whereas, Break Armor attacks greatly increase your damage to them in future turns. Choose wisely.",
-            "The team with the last man standing wins.",
-        ],
+            "While playing Hellblade II: Senua's Saga, I was captivated by its photo mode and thought, \"I can create something like this\". I decided to combine this inspiration with my plans to making a C++ project for my portfolio. The result is this photo mode implementation, where I’ve replicated many of the features and exact camera controls from Hellblade II. I've only implemented about half of the features because I had to stop at some point. After all, it was a challenge to prove to myself that I could do it. This project was a great way to challenge myself and showcase my capabilities. <br><br> You can download the project from GitHub to try it out. Though I haven't converted it into a plugin yet, you can integrate it into your own projects. I'm open to any suggestions you might have. <br><br> For a detailed explanation and sample images: https://github.com/egementon/PhotoModeProject",
         features: [
-            "Multiplayer Turn-Based System",
-            "3 different character classes with their own stats (STR, ARM, attack range)",
-            "More character classes and their stats can be added easily in the editor",
-            "2 types of attack options (Strength and Break Attack). All damage logic is coded as in the original game",
+            "Character Controls:",
+            ["Rotation: Adjust the rotation of the character.", "Up/Down: Move the character up or down.", "North/South, West/East: Move the character in horizontal directions.", "Hide Player: Option to hide the player character for unobstructed views."],
+            "Camera Controls:",
+            ["Field of View: Adjust the camera's field of view.", "Camera Roll: Rotate the camera for dynamic angles.", "Filters: Apply visual effects including Default, Sepia, and Desaturation. More can be added by creating Post-Process Materials.", "Filter Intensity: Control the strength of the applied filter.", "Show Grid: Display a grid overlay for precise framing."],
+            "Lighting Controls:",
+            ["Selected Light: Create up to three light sources and configure them.", "Enable/Disable Light: Toggle each light source on or off.", "Attach Light to Camera: Attach light source to the camera to place the light as you move.", "Move Light or Camera: Select move the light source or the camera."],
+            "Advanced Lighting Settings:",
+            ["Intensity: Adjust the brightness of the light source.", "Hue: Change the color of the light.", "Saturation: Modify the intensity of the light color."],
+            "Photo Capture:",
+            ["Capture Photos: Press the \"Space\" button to take a screenshot.", "Save Location: Captured photos are saved to the Saved folder of your Unreal project."],
         ],
-        image: "images/gifs/The_Banner_Saga.gif",
+        image: "images/gifs/Photo_Mode.gif",
         details: {
             developmentTime: {
                 icon: "fa-solid fa-clock",
                 title: "Development Time",
-                value: "1.5 months",
+                value: "2 weeks",
             },
             status: {
                 icon: "fa-solid fa-circle-info",
@@ -139,65 +179,16 @@ export const projects = [
             engine: {
                 icon: "fa-solid fa-server",
                 title: "Engine",
-                value: "Unreal Engine",
+                value: "Unreal Engine 5",
             },
             language: {
                 icon: "fa-solid fa-globe",
                 title: "Language",
-                value: "Blueprints",
+                value: "C++ and Blueprints",
             },
         },
-        techStack: ["Unreal Engine", "Blueprints", "Gameplay", "UI", "Network"],
-        youtube: "https://www.youtube.com/embed/pUnargOeXvk",
-    },
-    {
-        id: 4,
-        url: "vampire-game",
-        name: "Vampire Game",
-        shortDescription: "Made in 72 hours for a Game Jam. Improved for couple months afterwards.",
-        description:
-            "Made in 72 hours for Frostjam 23' Game Jam. Improved for couple months afterwards.<br><br> Download link: https://egemen-ton.itch.io/natural-born-tendencies<br> 72 Hours Version: https://youtu.be/FY1r324S1EU?si=XTafadhU201H0aE_ <br><br> New version has:<br> - Updated Characters<br> - New Animations<br> - New Environment and Level Design<br> - New Sound Effects<br> - Main Menu & Settings<br> - Difficulty Levels & Progression System<br> - Quality of Life Improvements<br> - Bug Fixes",
-        gameplay: [
-            "You are a vampire who fell asleep at night instead of hunting. You need to hunt a certain amount of people to get fed and must go to the safe zone before your health runs out. Sun is rising and damaging you more as time passes. You need to be quick. Avoid light sources and stay in the dark.",
-            "Be careful. You are allergic to some blood types. You should only kill the people who have the correct blood type. Otherwise, you lose your health. Don't worry. Your instincts will guide you.",
-        ],
-        controls: ["WASD - Movement", "F - Attack from behind", "H - Heal"],
-        image: "images/gifs/Vampire.gif",
-        details: {
-            developmentTime: {
-                icon: "fa-solid fa-clock",
-                title: "Development Time",
-                value: "3 days + couple months",
-            },
-            status: {
-                icon: "fa-solid fa-circle-info",
-                title: "Status",
-                value: "Released",
-            },
-            teamSize: {
-                icon: "fa-solid fa-people-group",
-                title: "Team Size",
-                value: "4",
-            },
-            engine: {
-                icon: "fa-solid fa-server",
-                title: "Engine",
-                value: "Unreal Engine",
-            },
-            language: {
-                icon: "fa-solid fa-globe",
-                title: "Language",
-                value: "Blueprints",
-            },
-            contributions: {
-                icon: "fa-solid fa-handshake-angle",
-                title: "Contributions",
-                value: "All Development, Game Design, Level Design",
-            },
-        },
-        techStack: ["Unreal Engine", "Blueprints", "Gameplay", "UI"],
-        youtube: "https://www.youtube.com/embed/LzRNQDpXIFQ",
-        
+        techStack: ["Unreal Engine", "C++", "Blueprints", "UI"],
+        youtube: "https://www.youtube.com/embed/paFQNt5nKu8",
     },
     {
         id: 5,
@@ -317,7 +308,7 @@ export const projects = [
             engine: {
                 icon: "fa-solid fa-server",
                 title: "Engine",
-                value: "Unreal Engine",
+                value: "Unreal Engine 5",
             },
             language: {
                 icon: "fa-solid fa-globe",
@@ -330,8 +321,111 @@ export const projects = [
     },
     {
         id: 6,
+        url: "vampire-game",
+        name: "Vampire Game",
+        shortDescription: "Made in 72 hours for a Game Jam. Improved for couple months afterwards.",
+        description:
+            "Made in 72 hours for Frostjam 23' Game Jam. Improved for couple months afterwards.<br><br> Download link: https://egemen-ton.itch.io/natural-born-tendencies<br> 72 Hours Version: https://youtu.be/FY1r324S1EU?si=XTafadhU201H0aE_ <br><br> New version has:<br> - Updated Characters<br> - New Animations<br> - New Environment and Level Design<br> - New Sound Effects<br> - Main Menu & Settings<br> - Difficulty Levels & Progression System<br> - Quality of Life Improvements<br> - Bug Fixes",
+        gameplay: [
+            "You are a vampire who fell asleep at night instead of hunting. You need to hunt a certain amount of people to get fed and must go to the safe zone before your health runs out. Sun is rising and damaging you more as time passes. You need to be quick. Avoid light sources and stay in the dark.",
+            "Be careful. You are allergic to some blood types. You should only kill the people who have the correct blood type. Otherwise, you lose your health. Don't worry. Your instincts will guide you.",
+        ],
+        controls: ["WASD - Movement", "F - Attack from behind", "H - Heal"],
+        image: "images/gifs/Vampire.gif",
+        details: {
+            developmentTime: {
+                icon: "fa-solid fa-clock",
+                title: "Development Time",
+                value: "3 days + couple months",
+            },
+            status: {
+                icon: "fa-solid fa-circle-info",
+                title: "Status",
+                value: "Released",
+            },
+            teamSize: {
+                icon: "fa-solid fa-people-group",
+                title: "Team Size",
+                value: "4",
+            },
+            engine: {
+                icon: "fa-solid fa-server",
+                title: "Engine",
+                value: "Unreal Engine 5",
+            },
+            language: {
+                icon: "fa-solid fa-globe",
+                title: "Language",
+                value: "Blueprints",
+            },
+            contributions: {
+                icon: "fa-solid fa-handshake-angle",
+                title: "Contributions",
+                value: "All Development, Game Design, Level Design",
+            },
+        },
+        techStack: ["Unreal Engine", "Blueprints", "Gameplay", "UI"],
+        youtube: "https://www.youtube.com/embed/LzRNQDpXIFQ",
+        
+    }
+];
+
+export const smallProjects = [
+    {
+        id: 1,
+        url: "the-banner-saga",
+        name: "The Banner Saga Clone",
+        shortDescription:
+            "Wanted to clone a game that I love, The Banner Saga. This is a multiplayer turn-based tactical-combat game prototype.",
+        description:
+            "In this project, I wanted to clone a game that I love, The Banner Saga. This is a multiplayer turn-based tactical-combat game prototype, developed with Unreal Engine 5 (Blueprints). More details: https://egemen-ton.itch.io/banner-saga-clone",
+        rules: [
+            "You are allowed to control only one character per turn and have to decide whether to move to a location or attack the enemy, if they are already in range.",
+            "You must choose between 2 types of attack. The strategy is to decide where you want to attack, to the opponent's Strength or Armor. STR attacks weaken the enemy and reduce their attack output permanently, whereas, Break Armor attacks greatly increase your damage to them in future turns. Choose wisely.",
+            "The team with the last man standing wins.",
+        ],
+        features: [
+            "Multiplayer Turn-Based System",
+            "3 different character classes with their own stats (STR, ARM, attack range)",
+            "More character classes and their stats can be added easily in the editor",
+            "2 types of attack options (Strength and Break Attack). All damage logic is coded as in the original game",
+        ],
+        image: "images/gifs/The_Banner_Saga.gif",
+        details: {
+            developmentTime: {
+                icon: "fa-solid fa-clock",
+                title: "Development Time",
+                value: "1.5 months",
+            },
+            status: {
+                icon: "fa-solid fa-circle-info",
+                title: "Status",
+                value: "Completed",
+            },
+            teamSize: {
+                icon: "fa-solid fa-people-group",
+                title: "Team Size",
+                value: "1",
+            },
+            engine: {
+                icon: "fa-solid fa-server",
+                title: "Engine",
+                value: "Unreal Engine 5",
+            },
+            language: {
+                icon: "fa-solid fa-globe",
+                title: "Language",
+                value: "Blueprints",
+            },
+        },
+        techStack: ["Unreal Engine", "Blueprints", "Gameplay", "UI", "Network"],
+        youtube: "https://www.youtube.com/embed/pUnargOeXvk",
+    },
+
+    {
+        id: 2,
         url: "gas",
-        name: "GAS",
+        name: "GAS Learning Project",
         shortDescription:
             "Earlier in my internship, I started learning Gameplay Ability System (GAS) and made this small project.",
         description:
@@ -356,7 +450,7 @@ export const projects = [
             engine: {
                 icon: "fa-solid fa-server",
                 title: "Engine",
-                value: "Unreal Engine",
+                value: "Unreal Engine 5",
             },
             language: {
                 icon: "fa-solid fa-globe",
@@ -375,11 +469,8 @@ export const projects = [
         ],
         youtube: "https://www.youtube.com/embed/lUhbEqJktOc",
     },
-];
-
-export const smallProjects = [
     {
-        id: 1,
+        id: 3,
         url: "GGJ24",
         name: "GGJ24",
         shortDescription:
@@ -406,7 +497,7 @@ export const smallProjects = [
             engine: {
                 icon: "fa-solid fa-server",
                 title: "Engine",
-                value: "Unreal Engine",
+                value: "Unreal Engine 5",
             },
             language: {
                 icon: "fa-solid fa-globe",
@@ -417,8 +508,11 @@ export const smallProjects = [
         techStack: ["Unreal Engine", "Blueprints", "Gameplay", "UI"],
         youtube: "https://www.youtube.com/embed/W2o_c8IAbIc",
     },
+];
+
+export const tinyProjects = [
     {
-        id: 2,
+        id: 1,
         url: "simple-shooter",
         name: "Simple Shooter",
         shortDescription:
@@ -458,7 +552,7 @@ export const smallProjects = [
             engine: {
                 icon: "fa-solid fa-server",
                 title: "Engine",
-                value: "Unreal Engine",
+                value: "Unreal Engine 5",
             },
             language: {
                 icon: "fa-solid fa-globe",
@@ -470,7 +564,7 @@ export const smallProjects = [
         youtube: "https://www.youtube.com/embed/urb-1d2YoNk",
     },
     {
-        id: 3,
+        id: 2,
         url: "crypt-raider",
         name: "Crypt Raider",
         shortDescription:
@@ -497,7 +591,7 @@ export const smallProjects = [
             engine: {
                 icon: "fa-solid fa-server",
                 title: "Engine",
-                value: "Unreal Engine",
+                value: "Unreal Engine 5",
             },
             language: {
                 icon: "fa-solid fa-globe",
@@ -509,7 +603,7 @@ export const smallProjects = [
         youtube: "https://www.youtube.com/embed/fYGTDOQBFm0",
     },
     {
-        id: 4,
+        id: 3,
         url: "obstacle-assault",
         name: "Obstacle Assault",
         shortDescription:
@@ -536,7 +630,7 @@ export const smallProjects = [
             engine: {
                 icon: "fa-solid fa-server",
                 title: "Engine",
-                value: "Unreal Engine",
+                value: "Unreal Engine 5",
             },
             language: {
                 icon: "fa-solid fa-globe",
@@ -550,16 +644,16 @@ export const smallProjects = [
 ];
 
 export const skills = [
+    "Game Programming",
     "Unreal Engine",
     "C++",
     "Blueprints",
-    "Game Programming",
     "Gameplay",
     "AI",
     "UI",
     "Network",
-    "Git",
     "Gameplay Ability System (GAS)",
+    "Git",
 ];
 
 export const games = [
@@ -570,58 +664,73 @@ export const games = [
     },
     {
         id: 2,
+        name: "Baldur's Gate 3",
+        image: "images/games/baldurs-gate3-min.jpg",
+    },
+    {
+        id: 3,
         name: "The Last Of Us",
         image: "images/games/lastofus-min.jpg",
     },
     {
-        id: 3,
+        id: 4,
         name: "Sekiro",
         image: "images/games/sekiro-min.jpg",
     },
     {
-        id: 4,
+        id: 5,
         name: "God Of War",
         image: "images/games/godofwar-min.jpg",
     },
     {
-        id: 5,
+        id: 6,
         name: "Hollow Knight",
         image: "images/games/hollowknight-min.jpeg",
     },
     {
-        id: 6,
+        id: 7,
         name: "Ori And The Will Of The Wisps",
         image: "images/games/ori-min.jpg",
     },
     {
-        id: 7,
+        id: 8,
         name: "Titanfall 2",
         image: "images/games/titanfall-min.jpg",
     },
     {
-        id: 8,
+        id: 9,
         name: "Dark Souls 3",
         image: "images/games/darksouls-min.jpg",
     },
     {
-        id: 9,
+        id: 10,
         name: "Red Dead Redemption 2",
         image: "images/games/rdr2-min.jpg",
     },
     {
-        id: 10,
+        id: 11,
         name: "Hades",
         image: "images/games/hades-min.jpg",
     },
     {
-        id: 11,
+        id: 12,
         name: "Cyberpunk 2077",
         image: "images/games/cyberpunk-min.jpg",
     },
     {
-        id: 12,
+        id: 13,
         name: "Kingdom Come: Deliverance",
         image: "images/games/kingdomcome-min.jpg",
+    },
+    {
+        id: 14,
+        name: "Total War: Shogun 2",
+        image: "images/games/shogun2-min.jpg",
+    },
+    {
+        id: 15,
+        name: "The Finals",
+        image: "images/games/the-finals-min.jpg",
     },
 ];
 

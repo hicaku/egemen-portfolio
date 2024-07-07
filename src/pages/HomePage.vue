@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import FeaturedProjects from "@/components/FeaturedProjects.vue";
 import SmallProjects from "@/components/SmallProjects.vue";
+import TinyProjects from "@/components/TinyProjects.vue";
 
 import { useIndexStore } from "@/stores/index";
 
@@ -59,11 +60,11 @@ const { downloadCV } = store;
         <blockquote class="text-2xl italic text-center">
             I love transforming an abstract gameplay idea into a concrete system
             that the player can interact with.<br />
-            Programming new systems and seeing them work is the best! Currently,
-            my special interests are Game AI and Game Design.
+            Programming new systems and seeing them work is the best!
         </blockquote>
         <FeaturedProjects class="pt-10" id="featuredProjects" />
         <SmallProjects class="pt-10" />
+        <TinyProjects class="pt-10" />
     </main>
 </template>
 <style scoped>
