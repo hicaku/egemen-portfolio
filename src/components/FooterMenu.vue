@@ -22,7 +22,7 @@ import { links } from "@/stores/index";
             </a>
         </div>
         <span class="text-center block mt-10 text-xs">
-            Last updated on 07.07.2024 - Made by
+            Last updated on 30.03.2025 - Made by
             <a
                 href="https://github.com/hicaku"
                 target="_blank"

@@ -52,7 +52,7 @@ const { downloadCV } = store;
                 </div>
             </div>
             <img
-                src="/images/egemen.jpg"
+                src="/images/egemen.png"
                 alt="Egemen"
                 class="landing-image h-full w-96 mx-auto sm:mx-0"
             />

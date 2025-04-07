@@ -4,35 +4,27 @@ import { skills, games } from "@/stores/index";
 <template>
     <div>
         <h3 class="text-center text-2xl font-bold my-10 text-yellow-500">
-            ABOUT ME
+    ABOUT ME
         </h3>
-        <p class="text-xl">
-            Passionate gamer and a programmer with a strong interest in
-            game design. After graduating as a Physics Engineer from one of the
-            top schools in Turkey, I decided to pursue my true passion: game
-            development. I have 2+ years of experience with Unreal
-            Engine (C++ / Blueprint). I live with the dream of making games
-            worth the players' time and offering them unforgettable experiences,
-            similar to the experiences I am having with my favorite games.
-        </p>
-        <p class="text-xl mt-10">
-            I worked on a Battle Royale/MOBA game called "Hit and Boom" using Unreal Engine. 
-            Throughout the project, I actively contributed to various aspects, including gameplay, AI, and UI. 
-            My primary focus was on player abilities, where I was involved in developing new abilities and addressing bugs. 
-            Additionally, I worked on UI elements and enhanced my network programming skills to accommodate the multiplayer nature of the game. 
-            One of the key highlights of my contributions to this project was the design and
-            programming of the game's AI, where I had the freedom to create the
-            system from scratch.
-            <br />
-            <br /> Currently, I am working on a first-person cooperative tactical shooter game named "Contain" and another unannounced project, contributing to various aspects of game development.
-            <br /> 
-            <br />Please don't hesitate to reach out to me through the links at
-            the bottom of the page.
-        </p>
-        <h3 class="text-center text-2xl font-bold my-10 text-yellow-500">
+
+        <div class="max-w-5xl mx-auto text-xl space-y-6">
+            <p>
+                Passionate <strong>programmer</strong> with a background in <strong>physics</strong> and strong game <strong>design</strong> sensibility, 
+                <strong>2.5+ years</strong> of experience building and optimizing <strong>gameplay</strong> systems, <strong>AI</strong> behaviors, <strong>UI</strong> elements, 
+                and <strong>combat mechanics</strong> in <strong>Unreal Engine (C++/Blueprint)</strong>.<br><br>
+                <strong>Passionate</strong> about creating immersive gaming experiences that engage players and leave a lasting impact.
+            </p>
+            <p>
+                I recently released the FPS roguelite <strong>Revenge of the Mage</strong> in Early Access, where it received over 80% very positive reviews on Steam.
+                I'm currently working on a first-person cooperative tactical shooter titled <strong>Contain</strong>.
+                <br /><br />
+                Please don't hesitate to reach out to me through the links at the bottom of the page.
+            </p>
+        </div>
+        <h3 class="text-center text-2xl font-bold mt-10 text-yellow-500">
             SKILLS
         </h3>
-        <div class="mt-10 flex flex-wrap gap-2">
+        <div class="mt-10 flex justify-center items-center flex-wrap gap-2">
             <div
                 v-for="(skill, index) in skills"
                 :key="index"
@@ -41,7 +33,7 @@ import { skills, games } from "@/stores/index";
                 {{ skill }}
             </div>
         </div>
-        <h3 class="text-center text-2xl font-bold my-10 text-yellow-500">
+        <h3 class="text-center text-2xl font-bold mt-32 text-yellow-500">
             MY FAVORITE GAMES
         </h3>
         <div class="mt-10 pb-10 flex flex-wrap h-fit">

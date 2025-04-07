@@ -3,11 +3,50 @@ import { defineStore } from "pinia";
 export const projects = [
     {
         id: 1,
-        url: "Contain",
-        name: "Contain (Steam)",
-        shortDescription: "First-person cooperative tactical shooter game. I started working on it in July 2024.",
+        url: "revenge-of-the-mage",
+        name: "Revenge of The Mage (Steam)",
+        shortDescription: "FPS Roguelite Boomer Shooter. Worked on it from prototype stage to Early Access release and beyond.",
         description:
-            "Contain is a first-person cooperative tactical shooter game that I started working on in July 2024.",
+            "I played a key role in the development of Revenge of the Mage, an FPS roguelite boomer shooter with deep ability-based combat and progression systems. As the lead programmer in a five-person development team, I was responsible for core gameplay mechanics, AI, abilities, and various supporting systems. In addition to programming, I actively contributed to game design, helping shape mechanics, balance, and overall gameplay feel whenever possible. <br><br> I implemented over 40 mage spells, with more than half being unique, alongside a variety of passive abilities using the Gameplay Ability System (GAS). I also developed diverse projectile mechanics, including seeking, piercing, and explosive projectiles, adding depth to the game’s combat. <br><br> My work on enemy AI included designing and implementing melee, ranged, explosive, and flying enemies, as well as developing challenging boss fights using a dedicated AI plugin. I created a variety of status effects such as stun, burn, freeze, and shock while also implementing a dynamic difficulty scaling system that adjusts enemy HP and damage over time to maintain a balanced challenge. <br><br> To enhance gameplay variety, I developed multiple spawner systems for power-ups, lootables, traps, and enemy waves, ensuring dynamic and engaging encounters. Additionally, I was responsible for implementing all sound effects (SFX) and localization support. <br><br> I also built several supporting gameplay systems, including an aim assist component, a combo gauge meter, an XP progression system, and various other mechanics. <br><br> Beyond development, I played an active role in community management, gathering player feedback and integrating it into the game to refine mechanics and improve the overall experience. <br><br> Steam link: <a href=\"https://store.steampowered.com/app/2287150/Revenge_of_the_Mage/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-500 underline\">Revenge of the Mage</a>",
+        image: "images/gifs/Revenge_of_the_Mage.gif",
+        details: {
+            developmentTime: {
+                icon: "fa-solid fa-clock",
+                title: "Development Time",
+                value: "6 months to Early Access + 3 months for the major update",
+            },
+            status: {
+                icon: "fa-solid fa-circle-info",
+                title: "Status",
+                value: "Early Access, Very Positive Reviews (+80%)",
+            },
+            teamSize: {
+                icon: "fa-solid fa-people-group",
+                title: "Team Size",
+                value: "5 Programmers, 13+ Team in Total",
+            },
+            engine: {
+                icon: "fa-solid fa-server",
+                title: "Engine",
+                value: "Unreal Engine 5",
+            },
+            language: {
+                icon: "fa-solid fa-globe",
+                title: "Language",
+                value: "C++ and Blueprints",
+            },
+        },
+        techStack: ["Unreal Engine", "C++", "Blueprints", "Gameplay", "AI", "UI", "Network"],
+        youtube: "https://www.youtube.com/embed/XhFayxByNtw?si=20kuajtaqXmcm6cg", 
+        
+    },
+    {
+        id: 2,
+        url: "contain",
+        name: "Contain (Steam)",
+        shortDescription: "First-person cooperative tactical shooter game. Started working on it in March 2025.",
+        description:
+            "Contain is a first-person cooperative tactical shooter that I began developing in March 2025. We scrapped the previous codebase and have started writing the game from scratch. <br><br> Steam link: <a href=\"https://store.steampowered.com/app/2186700/Contain/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-500 underline\">Contain</a>",
         image: "images/gifs/Contain.gif",
         details: {
             developmentTime: {
@@ -23,7 +62,7 @@ export const projects = [
             teamSize: {
                 icon: "fa-solid fa-people-group",
                 title: "Team Size",
-                value: "5 Developers, 15+ Size in Total",
+                value: "3 Programmers, 10+ Team in Total",
             },
             engine: {
                 icon: "fa-solid fa-server",
@@ -41,12 +80,12 @@ export const projects = [
         
     },
     {
-        id: 2,
+        id: 3,
         url: "hit-and-boom",
         name: "Hit and Boom (Steam)",
         shortDescription: "A MOBA/Battle Royale game I contributed to for a year and developed AI for.",
         description:
-            "I worked on a Battle Royale/MOBA game called 'Hit and Boom' using Unreal Engine. Throughout the project, I actively contributed to various aspects, including gameplay, AI, and UI. My primary focus was on player abilities, where I was involved in developing new abilities and addressing bugs. Additionally, I worked on UI elements and enhanced my network programming skills to accommodate the multiplayer nature of the game. <br><br> One of the key highlights of my contributions to this project was the design and programming of the game's AI, where I had the freedom to create the system from scratch. These AI characters move in teams of three while staying in the zone, clearing enemy camps, engaging in fights using skills, strategically avoiding disadvantaged situations, and surviving until reaching the final zone. The resulting work received positive feedback from both players and my colleagues.",
+            "I worked on a Battle Royale/MOBA game called 'Hit and Boom' using Unreal Engine. Throughout the project, I actively contributed to various aspects, including gameplay, AI, and UI. My primary focus was on player abilities, where I was involved in developing new abilities and addressing bugs. Additionally, I worked on UI elements and enhanced my network programming skills to accommodate the multiplayer nature of the game. <br><br> One of the key highlights of my contributions to this project was the design and programming of the game's AI, where I had the freedom to create the system from scratch. These AI characters move in teams of three while staying in the zone, clearing enemy camps, engaging in fights using skills, strategically avoiding disadvantaged situations, and surviving until reaching the final zone. The resulting work received positive feedback from both players and my colleagues. <br><br> Steam link: <a href=\"https://store.steampowered.com/app/2024080/Hit_and_Boom/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-500 underline\">Hit and Boom</a>",
         image: "images/gifs/Hit_And_Boom.gif",
         details: {
             developmentTime: {
@@ -80,7 +119,96 @@ export const projects = [
         
     },
     {
-        id: 3,
+        id: 2,
+        url: "gwent",
+        name: "Gwent Clone",
+        shortDescription: "Gwent card game clone from The Witcher 3: Wild Hunt",
+        description:
+            "Clone of the best card game on the planet. I recreated the exact mechanics as in original. <br><br> GitHub page: <a href=\"https://github.com/egementon/Gwent\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-500 underline\">Gwent</a>",
+        image: "images/gifs/Gwent.gif",
+        details: {
+            developmentTime: {
+                icon: "fa-solid fa-clock",
+                title: "Development Time",
+                value: "3-4 months",
+            },
+            status: {
+                icon: "fa-solid fa-circle-info",
+                title: "Status",
+                value: "Completed except the complex AI which I will add soon",
+            },
+            teamSize: {
+                icon: "fa-solid fa-people-group",
+                title: "Team Size",
+                value: "1",
+            },
+            engine: {
+                icon: "fa-solid fa-server",
+                title: "Engine",
+                value: "Unreal Engine 5",
+            },
+            language: {
+                icon: "fa-solid fa-globe",
+                title: "Language",
+                value: "C++",
+            },
+        },
+        techStack: ["Unreal Engine", "C++", "Gameplay", "AI", "UI"],
+        youtube: "https://www.youtube.com/embed/cxxQyTfz_Ks?si=vrr5Z0xdEiikLMdC",
+    },
+    {
+        id: 5,
+        url: "photo-mode-project",
+        name: "Photo Mode",
+        shortDescription:
+            "A feature inspired by the modern AAA game photo modes seen in titles like Hellblade II.",
+        description:
+            "While playing Hellblade II: Senua's Saga, I was captivated by its photo mode and thought, \"I can create something like this\". I decided to combine this inspiration with my plans to making a C++ project for my portfolio. The result is this photo mode implementation, where I’ve replicated many of the features and exact camera controls from Hellblade II. I've only implemented about half of the features because I had to stop at some point. After all, it was a challenge to prove to myself that I could do it. This project was a great way to challenge myself and showcase my capabilities. <br><br> You can download the project from GitHub to try it out. Though I haven't converted it into a plugin yet, you can integrate it into your own projects. I'm open to any suggestions you might have. <br><br> For a detailed explanation and sample images: <a href=\"https://github.com/egementon/PhotoModeProject\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-500 underline\">PhotoModeProject</a>",
+        features: [
+            "Character Controls:",
+            ["Rotation: Adjust the rotation of the character.", "Up/Down: Move the character up or down.", "North/South, West/East: Move the character in horizontal directions.", "Hide Player: Option to hide the player character for unobstructed views."],
+            "Camera Controls:",
+            ["Field of View: Adjust the camera's field of view.", "Camera Roll: Rotate the camera for dynamic angles.", "Filters: Apply visual effects including Default, Sepia, and Desaturation. More can be added by creating Post-Process Materials.", "Filter Intensity: Control the strength of the applied filter.", "Show Grid: Display a grid overlay for precise framing."],
+            "Lighting Controls:",
+            ["Selected Light: Create up to three light sources and configure them.", "Enable/Disable Light: Toggle each light source on or off.", "Attach Light to Camera: Attach light source to the camera to place the light as you move.", "Move Light or Camera: Select move the light source or the camera."],
+            "Advanced Lighting Settings:",
+            ["Intensity: Adjust the brightness of the light source.", "Hue: Change the color of the light.", "Saturation: Modify the intensity of the light color."],
+            "Photo Capture:",
+            ["Capture Photos: Press the \"Space\" button to take a screenshot.", "Save Location: Captured photos are saved to the Saved folder of your Unreal project."],
+        ],
+        image: "images/gifs/Photo_Mode.gif",
+        details: {
+            developmentTime: {
+                icon: "fa-solid fa-clock",
+                title: "Development Time",
+                value: "2 weeks",
+            },
+            status: {
+                icon: "fa-solid fa-circle-info",
+                title: "Status",
+                value: "Completed",
+            },
+            teamSize: {
+                icon: "fa-solid fa-people-group",
+                title: "Team Size",
+                value: "1",
+            },
+            engine: {
+                icon: "fa-solid fa-server",
+                title: "Engine",
+                value: "Unreal Engine 5",
+            },
+            language: {
+                icon: "fa-solid fa-globe",
+                title: "Language",
+                value: "C++",
+            },
+        },
+        techStack: ["Unreal Engine", "C++", "UI"],
+        youtube: "https://www.youtube.com/embed/paFQNt5nKu8",
+    },
+    {
+        id: 4,
         url: "hear-me-not",
         name: "Hear Me Not",
         shortDescription:
@@ -138,60 +266,12 @@ export const projects = [
         },
         techStack: ["Unreal Engine", "Blueprints", "Gameplay", "UI"],
         youtube: "https://www.youtube.com/embed/ZLqHHJ_eFfs",
-    },
+    }
+];
+
+export const smallProjects = [
     {
-        id: 4,
-        url: "photo-mode-project",
-        name: "Photo Mode Project",
-        shortDescription:
-            "A feature inspired by the modern AAA game photo modes seen in titles like Hellblade II.",
-        description:
-            "While playing Hellblade II: Senua's Saga, I was captivated by its photo mode and thought, \"I can create something like this\". I decided to combine this inspiration with my plans to making a C++ project for my portfolio. The result is this photo mode implementation, where I’ve replicated many of the features and exact camera controls from Hellblade II. I've only implemented about half of the features because I had to stop at some point. After all, it was a challenge to prove to myself that I could do it. This project was a great way to challenge myself and showcase my capabilities. <br><br> You can download the project from GitHub to try it out. Though I haven't converted it into a plugin yet, you can integrate it into your own projects. I'm open to any suggestions you might have. <br><br> For a detailed explanation and sample images: https://github.com/egementon/PhotoModeProject",
-        features: [
-            "Character Controls:",
-            ["Rotation: Adjust the rotation of the character.", "Up/Down: Move the character up or down.", "North/South, West/East: Move the character in horizontal directions.", "Hide Player: Option to hide the player character for unobstructed views."],
-            "Camera Controls:",
-            ["Field of View: Adjust the camera's field of view.", "Camera Roll: Rotate the camera for dynamic angles.", "Filters: Apply visual effects including Default, Sepia, and Desaturation. More can be added by creating Post-Process Materials.", "Filter Intensity: Control the strength of the applied filter.", "Show Grid: Display a grid overlay for precise framing."],
-            "Lighting Controls:",
-            ["Selected Light: Create up to three light sources and configure them.", "Enable/Disable Light: Toggle each light source on or off.", "Attach Light to Camera: Attach light source to the camera to place the light as you move.", "Move Light or Camera: Select move the light source or the camera."],
-            "Advanced Lighting Settings:",
-            ["Intensity: Adjust the brightness of the light source.", "Hue: Change the color of the light.", "Saturation: Modify the intensity of the light color."],
-            "Photo Capture:",
-            ["Capture Photos: Press the \"Space\" button to take a screenshot.", "Save Location: Captured photos are saved to the Saved folder of your Unreal project."],
-        ],
-        image: "images/gifs/Photo_Mode.gif",
-        details: {
-            developmentTime: {
-                icon: "fa-solid fa-clock",
-                title: "Development Time",
-                value: "2 weeks",
-            },
-            status: {
-                icon: "fa-solid fa-circle-info",
-                title: "Status",
-                value: "Completed",
-            },
-            teamSize: {
-                icon: "fa-solid fa-people-group",
-                title: "Team Size",
-                value: "1",
-            },
-            engine: {
-                icon: "fa-solid fa-server",
-                title: "Engine",
-                value: "Unreal Engine 5",
-            },
-            language: {
-                icon: "fa-solid fa-globe",
-                title: "Language",
-                value: "C++ and Blueprints",
-            },
-        },
-        techStack: ["Unreal Engine", "C++", "Blueprints", "UI"],
-        youtube: "https://www.youtube.com/embed/paFQNt5nKu8",
-    },
-    {
-        id: 5,
+        id: 6,
         url: "the-ultimate-shooter",
         name: "The Ultimate Shooter",
         shortDescription:
@@ -320,12 +400,12 @@ export const projects = [
         youtube: "https://www.youtube.com/embed/8u8ScEuO-qU",
     },
     {
-        id: 6,
+        id: 7,
         url: "vampire-game",
         name: "Vampire Game",
         shortDescription: "Made in 72 hours for a Game Jam. Improved for couple months afterwards.",
         description:
-            "Made in 72 hours for Frostjam 23' Game Jam. Improved for couple months afterwards.<br><br> Download link: https://egemen-ton.itch.io/natural-born-tendencies<br> 72 Hours Version: https://youtu.be/FY1r324S1EU?si=XTafadhU201H0aE_ <br><br> New version has:<br> - Updated Characters<br> - New Animations<br> - New Environment and Level Design<br> - New Sound Effects<br> - Main Menu & Settings<br> - Difficulty Levels & Progression System<br> - Quality of Life Improvements<br> - Bug Fixes",
+            "Made in 72 hours for Frostjam 23' Game Jam. Improved for couple months afterwards.<br><br> Download link: <a href=\"https://egemen-ton.itch.io/natural-born-tendencies\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-500 underline\">itch.io</a> <br> 72 Hours Version: <a href=\"https://youtu.be/FY1r324S1EU?si=XTafadhU201H0aE_\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-500 underline\">Youtube</a> <br><br> New version has:<br> - Updated Characters<br> - New Animations<br> - New Environment and Level Design<br> - New Sound Effects<br> - Main Menu & Settings<br> - Difficulty Levels & Progression System<br> - Quality of Life Improvements<br> - Bug Fixes",
         gameplay: [
             "You are a vampire who fell asleep at night instead of hunting. You need to hunt a certain amount of people to get fed and must go to the safe zone before your health runs out. Sun is rising and damaging you more as time passes. You need to be quick. Avoid light sources and stay in the dark.",
             "Be careful. You are allergic to some blood types. You should only kill the people who have the correct blood type. Otherwise, you lose your health. Don't worry. Your instincts will guide you.",
@@ -367,10 +447,7 @@ export const projects = [
         techStack: ["Unreal Engine", "Blueprints", "Gameplay", "UI"],
         youtube: "https://www.youtube.com/embed/LzRNQDpXIFQ",
         
-    }
-];
-
-export const smallProjects = [
+    },
     {
         id: 1,
         url: "the-banner-saga",
@@ -378,7 +455,7 @@ export const smallProjects = [
         shortDescription:
             "Wanted to clone a game that I love, The Banner Saga. This is a multiplayer turn-based tactical-combat game prototype.",
         description:
-            "In this project, I wanted to clone a game that I love, The Banner Saga. This is a multiplayer turn-based tactical-combat game prototype, developed with Unreal Engine 5 (Blueprints). More details: https://egemen-ton.itch.io/banner-saga-clone",
+            "In this project, I wanted to clone a game that I love, The Banner Saga. This is a multiplayer turn-based tactical-combat game prototype, developed with Unreal Engine 5 (Blueprints). <br><br> More details at: <a href=\"https://egemen-ton.itch.io/banner-saga-clone\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-500 underline\">itch.io</a>",
         rules: [
             "You are allowed to control only one character per turn and have to decide whether to move to a location or attack the enemy, if they are already in range.",
             "You must choose between 2 types of attack. The strategy is to decide where you want to attack, to the opponent's Strength or Armor. STR attacks weaken the enemy and reduce their attack output permanently, whereas, Break Armor attacks greatly increase your damage to them in future turns. Choose wisely.",
@@ -645,6 +722,7 @@ export const tinyProjects = [
 
 export const skills = [
     "Game Programming",
+    "Game Design",
     "Unreal Engine",
     "C++",
     "Blueprints",
